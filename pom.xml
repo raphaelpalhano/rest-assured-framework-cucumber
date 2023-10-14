@@ -1,0 +1,281 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.automacao.api</groupId>
+	<artifactId>rest-assured</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>rest-assured</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<jackson.version>2.9.10</jackson.version>
+
+	</properties>
+
+
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+	
+	<dependencies>
+		
+		<dependency>
+		    <groupId>io.rest-assured</groupId>
+		    <artifactId>json-schema-validator</artifactId>
+		    <version>5.3.2</version>
+		</dependency>
+
+		
+		 <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20170516</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.everit-org.json-schema</groupId>
+            <artifactId>org.everit.json.schema</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jsonschema2pojo</groupId>
+            <artifactId>jsonschema2pojo-core</artifactId>
+            <version>0.4.37</version>
+        </dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		
+	
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.module/jackson-module-jsonSchema -->
+		<dependency>
+		    <groupId>com.fasterxml.jackson.module</groupId>
+		    <artifactId>jackson-module-jsonSchema</artifactId>
+		    <version>2.15.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.3.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.5</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.14.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>7.14.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>7.14.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.everit.json/org.everit.json.schema -->
+		<dependency>
+		    <groupId>org.everit.json</groupId>
+		    <artifactId>org.everit.json.schema</artifactId>
+		    <version>1.5.1</version>
+		</dependency>
+
+
+	
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.9</version>
+		</dependency>
+
+
+		
+
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.26</version>
+		</dependency>
+	</dependencies>
+
+
+	 <build>
+		   <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                    <check />
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.ow2.asm</groupId>
+                        <artifactId>asm</artifactId>
+                        <version>5.0.3</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        
+		<plugin>
+			<groupId>com.assertthat.plugins</groupId>
+			<artifactId>assertthat-bdd-maven-plugin</artifactId>
+			<version>1.7.0</version>
+			<configuration>
+				<projectId>
+					<!--Jira project id e.g. 10001-->
+				</projectId>
+				<!--Optional can be supplied as environment variable ASSERTTHAT_ACCESS_KEY -->
+				<accessKey>
+					ec6267478c617447b4ccb94540ecbe4df8909108f28f606c9ed0a057384bd2f1 <!-- ASSERTTHAT_ACCESS_KEY -->
+				</accessKey>
+				<!--Optional can be supplied as environment variable ASSERTTHAT_SECRET_KEY -->
+				<secretKey>
+					ec6267478c617447b4ccb94540ecbe4df8909108f28f606c9ed0a057384bd2f1 <!-- ASSERTTHAT_SECRET_KEY -->
+				</secretKey>
+				<!-- Used for jira server integration only. If using cloud remove this option-->
+				<jiraServerUrl>https://mycompanyjira.com</jiraServerUrl>
+			</configuration>
+			<executions>
+				<execution>
+					<configuration>
+						<!--Optional - default ./features-->
+						<outputFolder>src/test/resources/features</outputFolder>
+						<!--Optional - all features downloaded by default - should be a valid JQL-->
+						<jql>project = XX AND key in ('XXX-1')</jql>
+						<!--Optional - default automated (can be one of: manual/automated/both)-->
+						<mode>automated</mode>
+						<!--Optional - tag expression filter for scenarios. More on tag expressions https://cucumber.io/docs/cucumber/api/#tag-expressions-->
+						<tags>(@smoke or @ui) and (not @slow)</tags>
+						<!--Optional - default cucumber (can be one of: cucumber/karate)-->
+						<type>cucumber</type>
+						<!--Optional - whether the phase is enabled (default is true)-->
+						<enabled>true</enabled>
+					</configuration>
+					<id>features</id>
+					<goals>
+						<goal>features</goal>
+					</goals>
+					<phase>pre-integration-test</phase>
+				</execution>
+				<execution>
+					<id>report</id>
+					<goals>
+						<goal>report</goal>
+					</goals>
+					<phase>post-integration-test</phase>
+					<configuration>
+						<!--Optional - default ./report-->
+						<jsonReportFolder>target/report/surefire-reports/cucumber/</jsonReportFolder>
+						<!--Optional - default - **/*.json -->
+						<jsonReportIncludePattern>**/cucumber.json</jsonReportIncludePattern>
+						<!--Optional - default cucumber (can be one of: cucumber/karate)-->
+						<type>cucumber</type>
+						<!--Optional - all Jira tickets will be updated with test results by default; when JQL is provided only filtered tickets will be updated -->
+						<jql>project = XX AND key in ('XXX-1')</jql>
+						<!--Optional - whether the phase is enabled (default is true) -->
+						<enabled>true</enabled>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+
+	
+    </plugins>
+  </build>
+  
+  
+   <distributionManagement>
+        <repository>
+            <id>internal.repo</id>
+            <name>Temporary Staging Repository</name>
+            <url>file://${project.build.directory}/staging-repo</url>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+        <url>https://github.com/simplymequeeny/json-string-schema-generator</url>
+        <connection>scm:git:git://github.com/simplymequeeny/json-string-schema-generator.git</connection>
+        <developerConnection>scm:git:git@github.com:simplymequeeny/json-string-schema-generator.git</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
+</project>

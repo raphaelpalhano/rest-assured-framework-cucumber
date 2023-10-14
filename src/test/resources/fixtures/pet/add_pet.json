@@ -1,0 +1,18 @@
+{
+  "id": 231,
+  "category": {
+    "id": 0,
+    "name": "Dogaoo"
+  },
+  "name": "sloopy",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
