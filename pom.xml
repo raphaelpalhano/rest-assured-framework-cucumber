@@ -14,7 +14,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+    	<maven.compiler.target>1.8</maven.compiler.target>
 		<jackson.version>2.9.10</jackson.version>
 
 	</properties>
@@ -154,9 +154,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
                 <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
+                     <source>1.8</source>
+                	<target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -183,9 +184,22 @@
                     </dependency>
                 </dependencies>
             </plugin>
+              <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                 <version>3.1.2</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -201,19 +215,12 @@
 			<artifactId>assertthat-bdd-maven-plugin</artifactId>
 			<version>1.7.0</version>
 			<configuration>
-				<projectId>
-					<!--Jira project id e.g. 10001-->
-				</projectId>
+				<projectId>10000</projectId>
 				<!--Optional can be supplied as environment variable ASSERTTHAT_ACCESS_KEY -->
-				<accessKey>
-					ec6267478c617447b4ccb94540ecbe4df8909108f28f606c9ed0a057384bd2f1 <!-- ASSERTTHAT_ACCESS_KEY -->
-				</accessKey>
-				<!--Optional can be supplied as environment variable ASSERTTHAT_SECRET_KEY -->
-				<secretKey>
-					ec6267478c617447b4ccb94540ecbe4df8909108f28f606c9ed0a057384bd2f1 <!-- ASSERTTHAT_SECRET_KEY -->
-				</secretKey>
+				<accessKey>ec6267478c617447b4ccb94540ecbe4df8909108f28f606c9ed0a057384bd2f1</accessKey>
+				<secretKey>620a239f60c35c77303a76923149e52155bdd43666f3947463d1836a48451398</secretKey>
 				<!-- Used for jira server integration only. If using cloud remove this option-->
-				<jiraServerUrl>https://mycompanyjira.com</jiraServerUrl>
+				<!--<jiraServerUrl>https://testools.atlassian.net/rest/api/2/project/10000</jiraServerUrl>-->
 			</configuration>
 			<executions>
 				<execution>
@@ -221,15 +228,14 @@
 						<!--Optional - default ./features-->
 						<outputFolder>src/test/resources/features</outputFolder>
 						<!--Optional - all features downloaded by default - should be a valid JQL-->
-						<jql>project = XX AND key in ('XXX-1')</jql>
+						<!--<jql>project = MT AND key in ('MT-14')</jql>-->
 						<!--Optional - default automated (can be one of: manual/automated/both)-->
 						<mode>automated</mode>
 						<!--Optional - tag expression filter for scenarios. More on tag expressions https://cucumber.io/docs/cucumber/api/#tag-expressions-->
-						<tags>(@smoke or @ui) and (not @slow)</tags>
-						<!--Optional - default cucumber (can be one of: cucumber/karate)-->
-						<type>cucumber</type>
-						<!--Optional - whether the phase is enabled (default is true)-->
-						<enabled>true</enabled>
+						<!--<tags>(@api)</tags> -->
+						
+						<!--<enabled>true</enabled>-->
+						  <ignoreCertErrors>true</ignoreCertErrors>
 					</configuration>
 					<id>features</id>
 					<goals>
@@ -247,13 +253,13 @@
 						<!--Optional - default ./report-->
 						<jsonReportFolder>target/report/surefire-reports/cucumber/</jsonReportFolder>
 						<!--Optional - default - **/*.json -->
-						<jsonReportIncludePattern>**/cucumber.json</jsonReportIncludePattern>
+						<!--<jsonReportIncludePattern>**/cucumber-json-report.json</jsonReportIncludePattern>-->
 						<!--Optional - default cucumber (can be one of: cucumber/karate)-->
-						<type>cucumber</type>
+						<!--<type>cucumber</type>-->
 						<!--Optional - all Jira tickets will be updated with test results by default; when JQL is provided only filtered tickets will be updated -->
-						<jql>project = XX AND key in ('XXX-1')</jql>
+						<!--<jql>project = MT AND key in ('MT-14')</jql>-->
 						<!--Optional - whether the phase is enabled (default is true) -->
-						<enabled>true</enabled>
+						<!--<enabled>true</enabled>-->
 					</configuration>
 				</execution>
 			</executions>

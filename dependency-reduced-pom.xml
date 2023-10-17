@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.simplymequeeny</groupId>
-  <artifactId>json-string-schema-generator</artifactId>
-  <version>1.0.2</version>
+  <groupId>com.automacao.api</groupId>
+  <artifactId>rest-assured</artifactId>
+  <name>rest-assured</name>
+  <version>0.0.1-SNAPSHOT</version>
+  <url>http://maven.apache.org</url>
   <scm>
     <connection>scm:git:git://github.com/simplymequeeny/json-string-schema-generator.git</connection>
     <developerConnection>scm:git:git@github.com:simplymequeeny/json-string-schema-generator.git</developerConnection>
-    <tag>json-string-schema-generator-1.0.2</tag>
     <url>https://github.com/simplymequeeny/json-string-schema-generator</url>
   </scm>
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.7.0</version>
         <configuration>
-          <source>${jdk.version}</source>
-          <target>${jdk.version}</target>
+          <source>1.8</source>
+          <target>1.8</target>
         </configuration>
       </plugin>
       <plugin>
@@ -43,7 +45,19 @@
         </configuration>
       </plugin>
       <plugin>
+        <artifactId>maven-failsafe-plugin</artifactId>
+        <version>3.1.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>integration-test</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
         <artifactId>maven-shade-plugin</artifactId>
+        <version>3.5.0</version>
         <executions>
           <execution>
             <phase>package</phase>
@@ -52,6 +66,40 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.assertthat.plugins</groupId>
+        <artifactId>assertthat-bdd-maven-plugin</artifactId>
+        <version>1.7.0</version>
+        <executions>
+          <execution>
+            <id>features</id>
+            <phase>pre-integration-test</phase>
+            <goals>
+              <goal>features</goal>
+            </goals>
+            <configuration>
+              <outputFolder>src/test/resources/features</outputFolder>
+              <mode>automated</mode>
+              <ignoreCertErrors>true</ignoreCertErrors>
+            </configuration>
+          </execution>
+          <execution>
+            <id>report</id>
+            <phase>post-integration-test</phase>
+            <goals>
+              <goal>report</goal>
+            </goals>
+            <configuration>
+              <jsonReportFolder>target/report/surefire-reports/cucumber/</jsonReportFolder>
+            </configuration>
+          </execution>
+        </executions>
+        <configuration>
+          <projectId>10000</projectId>
+          <accessKey>ec6267478c617447b4ccb94540ecbe4df8909108f28f606c9ed0a057384bd2f1</accessKey>
+          <secretKey>620a239f60c35c77303a76923149e52155bdd43666f3947463d1836a48451398</secretKey>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -74,6 +122,44 @@
         </exclusion>
       </exclusions>
     </dependency>
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>4.3.0</version>
+      <scope>test</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>groovy</artifactId>
+          <groupId>org.codehaus.groovy</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>groovy-xml</artifactId>
+          <groupId>org.codehaus.groovy</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>httpmime</artifactId>
+          <groupId>org.apache.httpcomponents</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>tagsoup</artifactId>
+          <groupId>org.ccil.cowan.tagsoup</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>json-path</artifactId>
+          <groupId>io.rest-assured</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>xml-path</artifactId>
+          <groupId>io.rest-assured</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>7.14.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
   <distributionManagement>
     <repository>
@@ -83,7 +169,9 @@
     </repository>
   </distributionManagement>
   <properties>
-    <jdk.version>1.8</jdk.version>
-    <jackson.version>2.9.0.pr4</jackson.version>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jackson.version>2.9.10</jackson.version>
   </properties>
 </project>

@@ -3,11 +3,6 @@ package br.com.organization.project.steps;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import java.io.IOException;
-
-import org.json.JSONException;
-import org.json.simple.parser.ParseException;
-
 import br.com.organization.project.core.RequestManager;
 import br.com.organization.project.model.Response;
 import br.com.organization.project.util.JsonSchemaGenerator;
@@ -17,7 +12,7 @@ import io.cucumber.java.pt.Entao;
 import io.cucumber.java.pt.Mas;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
-public class ValidationsResponse {
+public class ValidationsResponsePetStep {
 	@Entao("^o status code deve ser \"(.*?)\"$")
 	public void vaidateStatusCode(String expectedStatusCode) {
 		assertEquals(expectedStatusCode, String.valueOf(Response.getResponse().getStatusCode()));

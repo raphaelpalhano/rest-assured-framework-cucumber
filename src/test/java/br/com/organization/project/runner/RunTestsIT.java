@@ -8,9 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(glue = { "br.com.organization.project.steps", "br.com.organization.project.core" }, monochrome = true, plugin = { "pretty",
-		"html:target/cucumber-html-report",
-		"json:target/cucumber-json-report"}, 
-		 tags = "", features = "src/test/resources/features/")
-public class RunTests {
+		"html:target/report/surefire-reports/html/cucumber.html",
+		"json:target/report/surefire-reports/cucumber/cucumber.json"}, 
+		 tags = "", features = {"classpath:features/"})
+public class RunTestsIT {
 
 }

@@ -1,5 +1,16 @@
 # Framework Rest-Assured 
 
-## Schema
 
-https://www.jsonschema.net/app/schemas/0
+
+
+## Jira Config
+
+Find jira projectid
+https://{domain}.atlassian.net/rest/api/2/project
+
+
+## AsserThat
+
+**Run Integration Test**
+
+ mvn clean verify -Dtest=RunTestsIT

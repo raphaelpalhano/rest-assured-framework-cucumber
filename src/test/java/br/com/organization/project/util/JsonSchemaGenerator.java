@@ -127,6 +127,8 @@ public final class JsonSchemaGenerator {
             case STRING:
                 result.append("string\" },");
                 break;
+		default:
+			break;
         }
 
         return result.toString();
