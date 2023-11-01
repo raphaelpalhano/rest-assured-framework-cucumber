@@ -6,7 +6,10 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -296,23 +299,25 @@ public class RequestManager {
 	public static String generateToken() throws Exception {
 		jsonManipulator = new JsonUtil();
 		String token = null;
+		String body = "";
 		Map<String, String> paramsRequest = StringManager.conversorStringToMap(EnvObject.getAuthetication().get("Body").toString());
-		String body = String.format("username=%s&password=%s&grant_type=%s", paramsRequest.get("username"), paramsRequest.get("password"), paramsRequest.get("grant_type"));
-		HashMap<String,String> headerMap = new HashMap<String, String>();
-		headerMap.put("Content-Type","application/x-www-form-urlencoded");
-		headerMap.put("accept", "application/json");
-		headerMap.put("tipo-usuario", "PS");
-		headerMap.put("Cookie", "b755d47b7a9d47a062819f968f85c5b1=def2d409853e76396f610c230d3386da");
-		headerMap.put("Authorization", "Basic dnBwLXZhbGlkYS10b2tlbi1oOmRmOWFmMzlmLWNlODItNGRmNy1hMmRhLWViYjc1YWE0ODkwZA==");
+		Map<String, String> headers = StringManager.conversorStringToMap(EnvObject.getAuthetication().get("Headers").toString());
+		headers.put("Authorization", "Basic dnBwLXZhbGlkYS10b2tlbi1oOmRmOWFmMzlmLWNlODItNGRmNy1hMmRhLWViYjc1YWE0ODkwZA==");
+		for(Entry<String, String> entry: paramsRequest.entrySet()) {
+			body += entry.getKey() + "=" + entry.getValue() + "&";
 
+		}
+		if (!body.isEmpty() && body.endsWith("&")) {
+		    // Remova o '&' do final da string
+		    body = body.substring(0, body.length() - 1);
+		}
 		
 		Response response = 
-				given().headers(headerMap).config(RestAssuredConfig.config().decoderConfig(DecoderConfig.decoderConfig().defaultContentCharset("UTF-8")).and().sslConfig(new SSLConfig().relaxedHTTPSValidation()))
+				given().headers(headers).config(RestAssuredConfig.config().decoderConfig(DecoderConfig.decoderConfig().defaultContentCharset("UTF-8")).and().sslConfig(new SSLConfig().relaxedHTTPSValidation()))
 	             .body(body)
                 .when()
 	                .post(EnvObject.getAuthenticate_url());
-		String res = response.print();
-		String hea = response.getHeaders().toString();
+		response.then().log().all();
 
 		
 		if (response.getStatusCode() == 200) {

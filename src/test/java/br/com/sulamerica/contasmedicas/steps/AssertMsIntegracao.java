@@ -36,7 +36,7 @@ public class AssertMsIntegracao {
 
 	@E("retornar o codigo status do protocolo {string}")
 	public void validarOcodigoProtocolo(String codigoStatusExpected) throws Exception {
-		Thread.sleep(1000);
+		Thread.sleep(1500);
 		Response res = RequestManager.getWithPathParam(String.format("%s/guias/arquivos/simplificado/", Request.getParam().get("codigo-prestador")), Request.getParam().get("codigo-protocolo")); 
 		String codigoStatus = res.getBody().jsonPath().get("codigo-status").toString();
 		assertEquals(codigoStatusExpected, codigoStatus);

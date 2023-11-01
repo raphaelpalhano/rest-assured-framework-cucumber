@@ -18,12 +18,12 @@
 </ans:cabecalho>
 <ans:prestadorParaOperadora>
 <ans:loteGuias>
-<ans:numeroLote>4172133909</ans:numeroLote>
+<ans:numeroLote>2990917519</ans:numeroLote>
 <ans:guiasTISS>
 <ans:guiaSP-SADT>
 <ans:cabecalhoGuia>
 <ans:registroANS>006246</ans:registroANS>
-<ans:numeroGuiaPrestador>2566147061</ans:numeroGuiaPrestador>
+<ans:numeroGuiaPrestador>6675573156</ans:numeroGuiaPrestador>
 <ans:guiaPrincipal>3018695</ans:guiaPrincipal>
 </ans:cabecalhoGuia>
 <ans:dadosAutorizacao>
@@ -49,7 +49,7 @@
 </ans:profissionalSolicitante>
 </ans:dadosSolicitante>
 <ans:dadosSolicitacao>
-<ans:dataSolicitacao>2023-10-01</ans:dataSolicitacao>
+<ans:dataSolicitacao>2023-08-01</ans:dataSolicitacao>
 <ans:caraterAtendimento>1</ans:caraterAtendimento>
 </ans:dadosSolicitacao>
 <ans:dadosExecutante>

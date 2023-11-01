@@ -81,12 +81,12 @@ public class Hooks {
 				token =  RequestManager.getToken();
 				break;
 			case AuthenticationType.APPLICATION_X_ENCODED:
-			token =  RequestManager.generateToken();
-			HashMap<String,String> headerMap = new HashMap<>();
-			headerMap.put("Authorization", "Bearer " + token);
-			EnvObject.setToken(headerMap);
-//			EnvObject.setHeader(StringManager.conversorStringToMap(EnvObject.getAuthetication().get("Header").toString()));
-			break;
+				token =  RequestManager.generateToken();
+				HashMap<String,String> headerMap = new HashMap<>();
+				headerMap.put("Authorization", "Bearer " + token);
+				EnvObject.setToken(headerMap);
+	//			EnvObject.setHeader(StringManager.conversorStringToMap(EnvObject.getAuthetication().get("Header").toString()));
+				break;
 			}
 			System.setProperty(accessTokenField, token);
 		}
