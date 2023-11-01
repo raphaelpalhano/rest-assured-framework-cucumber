@@ -17,6 +17,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import br.com.sulamerica.contasmedicas.constants.PathConstants;
+
 public class XmlManager {
     
     /*
@@ -30,8 +32,8 @@ public class XmlManager {
      * 
      * 
      */
-      public void updateXml(Map<String, String> valoresParaModificarXml, String nomeXml) throws Exception {
-        InputStream inputStream = new FileInputStream(new File(System.getProperty("user.dir") + File.separator + nomeXml));
+      public static void updateXml(Map<String, String> valoresParaModificarXml, String nomeXml) throws Exception {
+        InputStream inputStream = new FileInputStream(FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH, nomeXml));
         DocumentBuilderFactory domFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder domBuilder = domFactory.newDocumentBuilder();
         Document document = domBuilder.parse(inputStream);
@@ -55,7 +57,7 @@ public class XmlManager {
         Transformer transformer = transformerFactory.newTransformer();
         transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
         transformer.transform(new DOMSource(document),
-                new StreamResult(System.getProperty("user.dir") + File.separator + nomeXml));
+                new StreamResult(FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH, nomeXml)));
 
     }
 

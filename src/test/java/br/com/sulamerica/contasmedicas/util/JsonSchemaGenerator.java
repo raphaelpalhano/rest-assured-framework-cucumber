@@ -41,8 +41,8 @@ public final class JsonSchemaGenerator {
     }
 
     
-    public static void generateSchema(String filePath, org.json.simple.JSONObject jsonObject) throws Exception {
-    	String schemaJson = outputAsString(jsonObject.toJSONString());
+    public static void generateSchema(String filePath, String jsonObject) throws Exception {
+    	String schemaJson = outputAsString(jsonObject);
 
         Path schemaPath = Paths.get(SCHEMA_PATH, filePath);
         if (Files.notExists(schemaPath)) {

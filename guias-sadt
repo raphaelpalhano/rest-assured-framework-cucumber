@@ -3,12 +3,12 @@
 <ans:identificacaoTransacao>
 <ans:tipoTransacao>ENVIO_LOTE_GUIAS</ans:tipoTransacao>
 <ans:sequencialTransacao>2768573</ans:sequencialTransacao>
-<ans:dataRegistroTransacao>2023-10-06</ans:dataRegistroTransacao>
+<ans:dataRegistroTransacao>2023-09-06</ans:dataRegistroTransacao>
 <ans:horaRegistroTransacao>10:15:11</ans:horaRegistroTransacao>
 </ans:identificacaoTransacao>
 <ans:origem>
 <ans:identificacaoPrestador>
-<ans:codigoPrestadorNaOperadora>100000017474</ans:codigoPrestadorNaOperadora>
+<ans:codigoPrestadorNaOperadora>100000017475</ans:codigoPrestadorNaOperadora>
 </ans:identificacaoPrestador>
 </ans:origem>
 <ans:destino>
@@ -18,17 +18,17 @@
 </ans:cabecalho>
 <ans:prestadorParaOperadora>
 <ans:loteGuias>
-<ans:numeroLote>4172133909</ans:numeroLote>
+<ans:numeroLote>8794169272</ans:numeroLote>
 <ans:guiasTISS>
 <ans:guiaSP-SADT>
 <ans:cabecalhoGuia>
 <ans:registroANS>006246</ans:registroANS>
-<ans:numeroGuiaPrestador>2566147061</ans:numeroGuiaPrestador>
+<ans:numeroGuiaPrestador>5627727392</ans:numeroGuiaPrestador>
 <ans:guiaPrincipal>3018695</ans:guiaPrincipal>
 </ans:cabecalhoGuia>
 <ans:dadosAutorizacao>
 <ans:numeroGuiaOperadora>3018688</ans:numeroGuiaOperadora>
-<ans:dataAutorizacao>2023-10-01</ans:dataAutorizacao>
+<ans:dataAutorizacao>2023-08-01</ans:dataAutorizacao>
 </ans:dadosAutorizacao>
 <ans:dadosBeneficiario>
 <ans:numeroCarteira>09018100032330013</ans:numeroCarteira>
@@ -37,7 +37,7 @@
 </ans:dadosBeneficiario>
 <ans:dadosSolicitante>
 <ans:contratadoSolicitante>
-<ans:codigoPrestadorNaOperadora>100000017474</ans:codigoPrestadorNaOperadora>
+<ans:codigoPrestadorNaOperadora>100000017475</ans:codigoPrestadorNaOperadora>
 <ans:nomeContratado>Hospital Alem?o Oswaldo Cruz</ans:nomeContratado>
 </ans:contratadoSolicitante>
 <ans:profissionalSolicitante>
@@ -49,12 +49,12 @@
 </ans:profissionalSolicitante>
 </ans:dadosSolicitante>
 <ans:dadosSolicitacao>
-<ans:dataSolicitacao>2023-10-01</ans:dataSolicitacao>
+<ans:dataSolicitacao>2023-08-01</ans:dataSolicitacao>
 <ans:caraterAtendimento>1</ans:caraterAtendimento>
 </ans:dadosSolicitacao>
 <ans:dadosExecutante>
 <ans:contratadoExecutante>
-<ans:codigoPrestadorNaOperadora>100000017474</ans:codigoPrestadorNaOperadora>
+<ans:codigoPrestadorNaOperadora>100000017475</ans:codigoPrestadorNaOperadora>
 <ans:nomeContratado>HOSPITAL SANTA VIRGINIA</ans:nomeContratado>
 </ans:contratadoExecutante>
 <ans:CNES>2078457</ans:CNES>
@@ -66,7 +66,7 @@
 </ans:dadosAtendimento>
 <ans:procedimentosExecutados>
 <ans:procedimentoExecutado>
-<ans:dataExecucao>2023-10-01</ans:dataExecucao>
+<ans:dataExecucao>2023-08-01</ans:dataExecucao>
 <ans:horaInicial>14:00:00</ans:horaInicial>
 <ans:horaFinal>14:00:00</ans:horaFinal>
 <ans:procedimento>

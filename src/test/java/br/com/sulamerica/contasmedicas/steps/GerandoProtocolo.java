@@ -14,7 +14,7 @@ import io.restassured.response.Response;
 public class GerandoProtocolo {
 	
 	@Dado("^que o client side gera o protocolo \"(.*?)\" pelo endpoint \"(.*?)\"$")
-	public void alterando_informacao_do_pet(String condicao, String endpoint) throws Exception {
+	public void gerando_protocolo_guias(String condicao, String endpoint) throws Exception {
 		Response response;
 		Map<String, String> params = new HashMap<String, String>();
 
@@ -26,7 +26,7 @@ public class GerandoProtocolo {
 			
 
 		}
-		if(condicao.equals("prestador-invalido")) {
+		if(condicao.equals("codigo-prestador-invalido")) {
 			params.put("codigo-prestador", "100000017474");
 			params.put("quantidade-arquivos", "1");
 			params.put("nomes-arquivos", UUID.randomUUID().toString() + ".zip");
@@ -35,8 +35,11 @@ public class GerandoProtocolo {
 		
 		response = RequestManager.postWithQueryParams(endpoint, params);
 		String signinUrl = response.getBody().jsonPath().getList("_result.url").get(0).toString();
+		String protocoloCode = response.getBody().jsonPath().getList("_result.codigo-protocolo").get(0).toString();
 		assertEquals(200, response.statusCode());
 		Request.setUrl(signinUrl);
+		Request.setParam(params);
+		Request.setParam("codigo-protocolo", protocoloCode);
 
 
 	}

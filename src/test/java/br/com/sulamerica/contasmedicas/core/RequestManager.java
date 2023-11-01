@@ -3,8 +3,6 @@ package br.com.sulamerica.contasmedicas.core;
 import static io.restassured.RestAssured.given;
 
 import java.io.File;
-import java.nio.ByteBuffer;
-import java.util.Base64;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -13,6 +11,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.apache.groovy.parser.antlr4.GroovyParser.ClassNameContext;
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpRequest;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPut;
+import org.apache.http.entity.ContentType;
+import org.apache.http.entity.FileEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -25,6 +35,7 @@ import br.com.sulamerica.contasmedicas.util.FileManager;
 import br.com.sulamerica.contasmedicas.util.JsonUtil;
 import br.com.sulamerica.contasmedicas.util.SimpleJsonManager;
 import br.com.sulamerica.contasmedicas.util.StringManager;
+import io.restassured.RestAssured;
 import io.restassured.config.DecoderConfig;
 import io.restassured.config.RestAssuredConfig;
 import io.restassured.config.SSLConfig;
@@ -49,11 +60,48 @@ public class RequestManager {
 	}
 	
 	public static Response postFile(String filename) throws Exception {
-		String filePath = PathConstants.SPREADSHEETS_PATH;
+		String filePath = PathConstants.FIXTURES_PATH;
 		return given().contentType("multipart/form-data")
 				.multiPart("file", FileManager.getRecursiveFiles(filePath, filename)).when().post();
 	}
 
+	
+	public static Response putFile(String url, String filename) throws Exception {
+		RestAssured.urlEncodingEnabled = false;
+		Map<String, String> headers = new HashMap<String, String>();
+		headers.putAll(EnvObject.getToken());
+		File filePath = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH + File.separator + "zipado", filename) ;
+		Response response = given().baseUri(url)
+				.with().headers(headers).when()
+				.body(filePath).when().put();
+		
+		response.then().log().all();
+		
+		return response.then().extract().response();
+	}
+	
+	
+	public static Integer putFileClient(String url, String filename, String path) throws Exception {
+		
+		File filePath = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH + File.separator + path, filename) ;
+        FileEntity fileEntity = new FileEntity(filePath, ContentType.APPLICATION_OCTET_STREAM);
+ 
+	    HttpPut request = new HttpPut(url);
+	    request.setEntity(fileEntity);
+	    
+	    HttpClient httpClient = HttpClientBuilder.create().build();
+
+	   HttpResponse res = httpClient.execute(request, response -> {
+	        System.out.println(response.getStatusLine());
+	        return response;
+	    });
+	   
+	   System.out.println();
+	   
+		return res.getStatusLine().getStatusCode();
+    }
+	
+	
 	public static Response post(HashMap<String, Object> headers, String jsonName) throws Exception {
 		File payload = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH, jsonName);
 		JSONObject jsonObject = SimpleJsonManager.getJsonObject(payload);
@@ -127,17 +175,34 @@ public class RequestManager {
 		}
 		return validator;
 		
-	}	
+	}
+	
+	
+	public static Response getWithPathParam(String endpoint, String param) {
+		Map<String, String> headers = EnvObject.getHeaders();
+		headers.putAll(EnvObject.getToken());
+
+		Response response = given().with().headers(headers).when().get(Request.getPath() + endpoint + param);
+		response.then().log().all();
+				
+		if(response.getStatusCode() == 200)
+			return response.then().extract().response();
+		else {
+			try {
+				throw new Exception("Nao foi possivel fazer a requisição. O response retornou status code [ "+response.getStatusCode()+ " ].");
+			} catch (Exception e) {
+				LOGGER.log(Level.SEVERE, "problema ao gerar a excecao do status code!", e);
+			}
+		}
+		return null;
+	}
 
 
 	public static Response postWithQueryParams(String endpoint, Map<String, String> parametros) throws Exception {
 
 		Map<String, String> headers = EnvObject.getHeaders();
-		headers.putAll(EnvObject.getHeaders());
 		headers.putAll(EnvObject.getToken());
-		
-		
-		
+
 		Response response = given().queryParams(parametros).with().headers(headers).when().post(endpoint);
 		response.then().log().all();
 				
@@ -198,34 +263,6 @@ public class RequestManager {
 		return null;
 	}
 
-	
-	public static String generateToken(String codEmpresa) throws Exception {
-		jsonManipulator = new JsonUtil();
-		String token = null;
-		Map<String, String> paramsRequest = StringManager.conversorStringToMap(EnvObject.getAuthetication().get("Body").toString().replaceFirst("\\d{1,5}", codEmpresa));
-		
-		String body = String.format("username=%s&password=%s&cod_empresa=%s", paramsRequest.get("username"), paramsRequest.get("password"), paramsRequest.get("cod_empresa"));
-		HashMap<String,String> headerMap = new HashMap<String, String>();
-		headerMap.put("Content-Type","application/x-www-form-urlencoded");
-		
-		Response response = 
-				given().headers(headerMap).config(RestAssuredConfig.config().decoderConfig(DecoderConfig.decoderConfig().defaultContentCharset("UTF-8")).and().sslConfig(new SSLConfig().relaxedHTTPSValidation()))
-	             .body(body)
-                .when()
-	                .post(EnvObject.getAuthenticate_url());
-		
-		if (response.getStatusCode() == 201) {
-			token =  (String) jsonManipulator.decodification(response.then().extract().response().getBody().asString());
-		}else {
-			try {
-				throw new Exception("Não foi possível obter o token. A url de autenticação retornou status code [ "+response.getStatusCode()+ " ].");
-			} catch (Exception e) {
-				LOGGER.log(Level.SEVERE, "Servico de autenticacao com problemas, verifique se o autenticador nao esta fora!", e);
-			}
-		} 
-		
-		return token;
-	}
 	
 	
 	public static String getToken() throws Exception {

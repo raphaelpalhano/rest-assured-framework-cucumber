@@ -12,7 +12,7 @@ public class PathConstants {
 	public static final String FIXTURES_PATH = BASE_PATH + File.separator + "resources" + File.separator + "fixtures";
 	public static final String ENV_FILE = BASE_PATH + File.separator + "java" + File.separator  + File.separator + "env";
 	public static final String FEATURE_PATH = BASE_PATH + File.separator + "resources" + File.separator + "features";
-	public static final String SPREADSHEETS_PATH = BASE_PATH+File.separator+"resources"+File.separator+"spreadsheets";
+	public static final String SPREADSHEETS_PATH = BASE_PATH + File.separator + "resources" + File.separator + "spreadsheets";
 
 	public static final String SCHEMA_PATH = BASE_PATH + File.separator + "resources" + File.separator + "schemas" + File.separator;
 }
