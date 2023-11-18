@@ -1,0 +1,1 @@
+{"type":"object","properties":{"codigo":{"type":"number"},"prestador":{"type":"object","properties":{"codigo":{"type":"string"},"nome":{"type":"string"}}},"numero_chave_lote":{"type":"string"},"nome_arquivo_recebido":{"type":"string"},"codigo_status":{"type":"string"},"codigo_origem":{"type":"string"},"data_envio_arquivo":{"type":"string"}}}

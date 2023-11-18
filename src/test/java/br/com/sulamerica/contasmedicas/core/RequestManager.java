@@ -6,26 +6,18 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.apache.groovy.parser.antlr4.GroovyParser.ClassNameContext;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpRequest;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.FileEntity;
-import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -49,17 +41,8 @@ public class RequestManager {
 	private static Logger LOGGER = Logger.getLogger(ClassNameContext.class.getName());
 	private static JsonUtil jsonManipulator;
 	public static final String TOKEN_FIELD = "Token";
-	
+
 	private RequestManager() {
-	}
-	
-	
-	public static Response post(String jsonName) throws Exception {
-		jsonManipulator = new JsonUtil(jsonName);
-		
-		Response response = (Response) given().with().body(jsonManipulator.getJSONBodyString()).when().post(Request.getPath());
-		response.then().log().all();
-		return response;
 	}
 	
 	public static Response postFile(String filename) throws Exception {
@@ -84,9 +67,9 @@ public class RequestManager {
 	}
 	
 	
-	public static Integer putFileClient(String url, String filename, String path) throws Exception {
+	public static HttpResponse putFileClient(String url, String path, String filenamePath) throws Exception {
 		
-		File filePath = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH + File.separator + path, filename) ;
+		File filePath = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH + File.separator + path, filenamePath) ;
         FileEntity fileEntity = new FileEntity(filePath, ContentType.APPLICATION_OCTET_STREAM);
  
 	    HttpPut request = new HttpPut(url);
@@ -99,9 +82,7 @@ public class RequestManager {
 	        return response;
 	    });
 	   
-	   System.out.println();
-	   
-		return res.getStatusLine().getStatusCode();
+		return res;
     }
 	
 	
@@ -131,7 +112,53 @@ public class RequestManager {
 		}
 		return null;
 	}
-	
+
+
+	public static Response post(String body) throws Exception {
+
+		Map<String, String> headers = EnvObject.getHeaders();
+		headers.putAll(EnvObject.getHeaders());
+		headers.putAll(EnvObject.getToken());
+
+		Response response = given().contentType(EnvObject.getContent_type()).with().body(body).headers(headers)
+				.when().post(Request.getPath());
+		response.then().log().all();
+
+		return response;
+
+
+	}
+
+	public static Response put(Map<String, String> pathParam, String body) throws Exception {
+
+		Map<String, String> headers = EnvObject.getHeaders();
+		headers.putAll(EnvObject.getHeaders());
+		headers.putAll(EnvObject.getToken());
+
+		Response response = given().contentType(EnvObject.getContent_type()).basePath(Request.getPath()).pathParams(pathParam).with().body(body).headers(headers)
+				.when().post();
+		response.then().log().all();
+
+		return response;
+
+
+	}
+
+	public static Response put(String pathParam, String body) throws Exception {
+
+		Map<String, String> headers = EnvObject.getHeaders();
+		headers.putAll(EnvObject.getHeaders());
+		headers.putAll(EnvObject.getToken());
+
+		Response response = given().contentType(EnvObject.getContent_type()).basePath(Request.getPath()).with().body(body).headers(headers)
+				.when().put(pathParam);
+		response.then().log().all();
+
+		return response;
+
+
+	}
+
 
 	public static Response post(String url, JSONObject json) throws Exception {
 		return given().with().body(json.toString()).when().post(url);
@@ -156,7 +183,7 @@ public class RequestManager {
 	}
 	
 	
-	public static Response put(String jsonName) throws Exception {
+	public static Response putWithFile(String jsonName) throws Exception {
 		jsonManipulator = new JsonUtil(jsonName);
 		Response put = (Response) given().with().body(jsonManipulator.getJSONBodyString()).when().put(Request.getPath());
 		put.then().log().all();
@@ -208,17 +235,8 @@ public class RequestManager {
 
 		Response response = given().queryParams(parametros).with().headers(headers).when().post(endpoint);
 		response.then().log().all();
-				
-		if(response.getStatusCode() == 200)
-			return response.then().extract().response();
-		else {
-			try {
-				throw new Exception("Nao foi possivel fazer a requisição. O response retornou status code [ "+response.getStatusCode()+ " ].");
-			} catch (Exception e) {
-				LOGGER.log(Level.SEVERE, "problema ao gerar a excecao do status code!", e);
-			}
-		}
-		return null;
+
+		return response;
 	}
 	
 	

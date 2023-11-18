@@ -1,8 +1,10 @@
 package br.com.sulamerica.contasmedicas.util;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeType;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.sun.codemodel.JCodeModel;
 import org.apache.commons.io.FileUtils;
 import org.everit.json.schema.Schema;
@@ -10,6 +12,8 @@ import org.everit.json.schema.loader.SchemaLoader;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.jsonschema2pojo.SchemaMapper;
+
+import javax.xml.validation.SchemaFactory;
 
 import static br.com.sulamerica.contasmedicas.constants.PathConstants.SCHEMA_PATH;
 
@@ -27,13 +31,13 @@ public final class JsonSchemaGenerator {
     private static final Logger LOGGER = Logger.getLogger(JsonSchemaGenerator.class.getName());
     private static ObjectMapper objectMapper = new ObjectMapper();
 
-    public static String outputAsString(String json) throws IOException {
+    public static String outputAsString(String json) throws Exception {
         return cleanup(outputAsString(json, null));
     }
     
   
     
-    public static void outputAsFile(String json, String filename) throws IOException {
+    public static void outputAsFile(String json, String filename) throws Exception {
         FileUtils.writeStringToFile(
                 new File(filename),
                 cleanup(outputAsString( json)),
@@ -41,16 +45,19 @@ public final class JsonSchemaGenerator {
     }
 
     
-    public static void generateSchema(String filePath, String jsonObject) throws Exception {
-    	String schemaJson = outputAsString(jsonObject);
+    public static void generateSchema(String folder, String fileName, String jsonObject) throws Exception {
 
-        Path schemaPath = Paths.get(SCHEMA_PATH, filePath);
-        if (Files.notExists(schemaPath)) {
+        Path schemaPath = Paths.get(SCHEMA_PATH, folder);
+        Path pathFile = Path.of(schemaPath + File.separator + fileName + ".json");
+        if (Files.notExists(pathFile)) {
             System.out.println("Arquivo não encontrado, criando o arquivo...");
+            String schemaJson = outputAsString(jsonObject);
+
             try {
-                Files.createDirectories(schemaPath.getParent());
-                Files.write(schemaPath, schemaJson.getBytes(StandardCharsets.UTF_8));
-            	
+                Files.createDirectories(schemaPath);
+                Files.writeString(pathFile, schemaJson);
+
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -60,7 +67,7 @@ public final class JsonSchemaGenerator {
     }
     
     public static void outputAsPOJO(String json, String packageName,
-                                    String outputDirectory) throws IOException {
+                                    String outputDirectory) throws Exception {
         String schema = JsonSchemaGenerator.outputAsString(json);
         LOGGER.info("Generating POJO(s) ...");
 
@@ -134,9 +141,10 @@ public final class JsonSchemaGenerator {
         return result.toString();
     }
 
-    private static String cleanup(String dirty) {
+    private static String cleanup(String dirty) throws Exception {
         JSONObject rawSchema = new JSONObject(new JSONTokener(dirty));
-        Schema schema = SchemaLoader.load(rawSchema);
-        return schema.toString();
+        //Schema schema = SchemaLoader.load(rawSchema);
+        return rawSchema.toString();
+
     }
 }

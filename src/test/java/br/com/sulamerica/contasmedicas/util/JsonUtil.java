@@ -2,6 +2,7 @@ package br.com.sulamerica.contasmedicas.util;
 
 
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.groovy.parser.antlr4.GroovyParser.ClassNameContext;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -61,7 +62,7 @@ public class JsonUtil {
     String[] jsonBody;
     String path;
 
-    private static Logger LOGGER = Logger.getLogger(ClassNameContext.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(ClassNameContext.class.getName());
 
 
     public JsonUtil(){
@@ -71,7 +72,7 @@ public class JsonUtil {
 
     public JsonUtil(String arquivo) {
 		try {
-			File payload = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH, arquivo);
+			File payload = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH + File.separator + "json", arquivo);
 			leitor = new JSONParser();
 			jsonArray = new JSONArray();
 			String jsonBodyRead = getJSONFile(payload.toString());
@@ -90,13 +91,32 @@ public class JsonUtil {
 		return jsonObjct;
     }
     
-    public String getJSONBodyObject(){
-        return jsonObjct.toString();
+    public JSONObject getJSONBodyObject(){
+        return jsonObjct;
     }
 
     public JSONObject getJSONBodyInArray(int index){
         return (JSONObject) jsonArray.get(index);
 
+    }
+
+    public JSONObject getJsonWithDot(String keys) {
+        JSONObject json = jsonObjct;
+        String[] keysValues = keys.split("\\.");
+        for (String k : keysValues) {
+            json = (JSONObject) json.get(k);
+            if (json.isEmpty()) {
+                return null;
+            }
+        }
+
+        return json;
+    }
+
+    public JSONObject getJsonWitKey(String key) {
+        JSONObject json = jsonObjct;
+
+        return (JSONObject) json.get(key);
     }
 
     public Object decodification(String code) throws ParseException {

@@ -24,7 +24,7 @@ public class FileManager {
 	
 	public static void zipFixtureFiles(String fileName) throws Exception {
 		    File sourceFile = getRecursiveFiles(PathConstants.FIXTURES_PATH, fileName);
-		    String path = PathConstants.FIXTURES_PATH + File.separator + "zipado";
+		    String path = PathConstants.FIXTURES_PATH + File.separator + "xml" + File.separator + "zipado";
 	        FileOutputStream fos = new FileOutputStream(String.format("%s/%s.zip", path, fileName));
 	        ZipOutputStream zipOut = new ZipOutputStream(fos);
 

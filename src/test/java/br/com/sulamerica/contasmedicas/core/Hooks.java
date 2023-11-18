@@ -21,7 +21,7 @@ import io.restassured.builder.ResponseSpecBuilder;
 
 public class Hooks {
 
-	private static String accessTokenField = "access_token";
+	private static final String accessTokenField = "access_token";
 	RequestSpecBuilder reqBuild = new RequestSpecBuilder();
 	ResponseSpecBuilder resBuild = new ResponseSpecBuilder();
 
@@ -56,7 +56,7 @@ public class Hooks {
 	}
 
 	public void setRestAssuredSpecifications() {
-		if (EnvObject.getHeaders().containsKey(RequestManager.TOKEN_FIELD) || EnvObject.getHeaders().size() > 0) {
+		if (EnvObject.getHeaders().containsKey(RequestManager.TOKEN_FIELD) || !EnvObject.getHeaders().isEmpty()) {
 			reqBuild.addHeaders(EnvObject.getHeaders());
 		}
 		RestAssured.requestSpecification = reqBuild.build();
@@ -64,8 +64,8 @@ public class Hooks {
 	}
 
 	public void loadToken() throws Exception {
-		if (!EnvObject.getAuthenticate_url().equals("") && !EnvObject.getAuthenticate_url().isEmpty()) {
-			String token = new String();
+		if (!EnvObject.getAuthenticate_url().isEmpty()) {
+			String token = "";
 			String authenticationType = EnvObject.getAuthetication().get("Authentication-Type").toString();
 			switch (authenticationType) {
 			case AuthenticationType.BASIC_AUTH:

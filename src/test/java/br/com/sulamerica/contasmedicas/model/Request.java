@@ -4,8 +4,20 @@ import java.util.Map;
 
 public class Request {
 	private static String path;
+
+	private static String pathParam;
 	private static String url;
 	private static Map<String, String> param;
+
+	public static String getBody() {
+		return body;
+	}
+
+	public static void setBody(String body) {
+		Request.body = body;
+	}
+
+	private static String body;
 
 
 	public static String getPath() {
@@ -33,5 +45,13 @@ public class Request {
 	}
 	public static void setParam(String key, String value) {
 		param.put(key, value);
+	}
+
+	public static String getPathParam() {
+		return pathParam;
+	}
+
+	public static void setPathParam(String pathParam) {
+		Request.pathParam = pathParam;
 	}
 }

@@ -1,0 +1,18 @@
+{
+    "valido": {
+      "codigo-prestador": "100000017475",
+      "quantidade-arquivos": "1",
+      "nomes-arquivos": "guias.zip"
+    },
+    "codigo-prestador-invalido": {
+      "codigo-prestador": "100000017474",
+      "quantidade-arquivos": "1",
+      "nomes-arquivos": "guias.zip"
+    },
+    "quantidade-arquivo-invalido": {
+      "codigo-prestador": "100000017475",
+      "quantidade-arquivos": "as",
+      "nomes-arquivos": "guias.zip"
+    }
+
+}

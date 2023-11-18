@@ -1,0 +1,4344 @@
+{
+
+  "sem-criticas-erro": {
+    "reprocessarErroInterno": false,
+    "codigoStatusAns": "EM_ANALISE",
+    "versaoTISS": "3.05.00",
+    "valorApresentado": 195.0,
+    "enviadoSFTP": false,
+    "guias": [
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "00:05:00",
+            "sequencialItem": 1,
+            "horaFinal": "01:05:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-31",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "17:24:10",
+            "sequencialItem": 2,
+            "horaFinal": "18:24:10",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-31",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994155473",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994155473",
+        "beneficiario": {
+          "nomeBeneficiario": "MAYARA M M MADRIGALI",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888477329630015"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "22:50:00",
+            "sequencialItem": 1,
+            "horaFinal": "23:50:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-30",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:05:18",
+            "sequencialItem": 2,
+            "horaFinal": "14:05:18",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-09-01",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994155417",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994155417",
+        "beneficiario": {
+          "nomeBeneficiario": "GLAUCIA PINHEIRO P DA FONSECA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888472096580010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "09:15:00",
+            "sequencialItem": 1,
+            "horaFinal": "10:15:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-30",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:51:28",
+            "sequencialItem": 2,
+            "horaFinal": "12:51:28",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-31",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994152397",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994152397",
+        "beneficiario": {
+          "nomeBeneficiario": "RODRIGO COUTO ZANONI",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01275001723690100"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:15:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:15:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-29",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "20:48:21",
+            "sequencialItem": 2,
+            "horaFinal": "21:48:21",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-29",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994148842",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994148842",
+        "beneficiario": {
+          "nomeBeneficiario": "LUCAS SILVA DOS SANTOS",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888482100780100"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "11:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "12:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-28",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "17:54:13",
+            "sequencialItem": 2,
+            "horaFinal": "18:54:13",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-28",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994144975",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994144975",
+        "beneficiario": {
+          "nomeBeneficiario": "ELISA CRISTIANE DEZEMBRO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888477177740018"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "15:45:00",
+            "sequencialItem": 1,
+            "horaFinal": "16:45:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-25",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "17:40:03",
+            "sequencialItem": 2,
+            "horaFinal": "18:40:03",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-25",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994139173",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994139173",
+        "beneficiario": {
+          "nomeBeneficiario": "VERONICA CARVALHO DE QUEIROZ",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888013644780018"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "18:55:00",
+            "sequencialItem": 1,
+            "horaFinal": "19:55:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-24",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "09:38:28",
+            "sequencialItem": 2,
+            "horaFinal": "10:38:28",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-25",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994136394",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994136394",
+        "beneficiario": {
+          "nomeBeneficiario": "ISABELA PAZ LEITE SUBENCO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888016507880023"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "16:30:00",
+            "sequencialItem": 1,
+            "horaFinal": "17:30:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:41:44",
+            "sequencialItem": 2,
+            "horaFinal": "14:41:44",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-24",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994132282",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994132282",
+        "beneficiario": {
+          "nomeBeneficiario": "ISABELLA MARIA ORLANDI DA SILVA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888012902980016"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "08:50:00",
+            "sequencialItem": 1,
+            "horaFinal": "09:50:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "15:37:37",
+            "sequencialItem": 2,
+            "horaFinal": "16:37:37",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994130303",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994130303",
+        "beneficiario": {
+          "nomeBeneficiario": "MARIANA VAN DURSEN G COSTA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01318540045710026"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "22:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "23:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-22",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:53:04",
+            "sequencialItem": 2,
+            "horaFinal": "12:53:04",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994129683",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994129683",
+        "beneficiario": {
+          "nomeBeneficiario": "LAURA DE CARVALHO NAIME",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888466098520028"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "19:10:00",
+            "sequencialItem": 1,
+            "horaFinal": "20:10:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-22",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "10:55:37",
+            "sequencialItem": 2,
+            "horaFinal": "11:55:37",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994129157",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994129157",
+        "beneficiario": {
+          "nomeBeneficiario": "MARIANA L DE ANDRADE",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888013407510025"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "18:00:00",
+            "sequencialItem": 1,
+            "horaFinal": "19:00:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-21",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:49:23",
+            "sequencialItem": 2,
+            "horaFinal": "14:49:23",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-22",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994125038",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994125038",
+        "beneficiario": {
+          "nomeBeneficiario": "ALINE CRISTINA SANTOS FERREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888479575150012"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "11:30:00",
+            "sequencialItem": 1,
+            "horaFinal": "12:30:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-21",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "18:08:44",
+            "sequencialItem": 2,
+            "horaFinal": "19:08:44",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-21",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994123270",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994123270",
+        "beneficiario": {
+          "nomeBeneficiario": "NICOLE EVELYN DAS NEVES FERREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015339140104"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "08:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "09:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-21",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "10:54:31",
+            "sequencialItem": 2,
+            "horaFinal": "11:54:31",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-22",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994122175",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994122175",
+        "beneficiario": {
+          "nomeBeneficiario": "VIVIANE BOREGIO TRINDADE",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888476027880010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:25:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:25:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-19",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "12:19:05",
+            "sequencialItem": 2,
+            "horaFinal": "13:19:05",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-20",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994118922",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994118922",
+        "beneficiario": {
+          "nomeBeneficiario": "HELENA CORREA STARLING BRAGA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888468609310100"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "22:50:00",
+            "sequencialItem": 1,
+            "horaFinal": "23:50:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-18",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:28:20",
+            "sequencialItem": 2,
+            "horaFinal": "12:28:20",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-20",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994118428",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994118428",
+        "beneficiario": {
+          "nomeBeneficiario": "HELLEN DOS SANTOS FERREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888479553270015"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "23:40:00",
+            "sequencialItem": 1,
+            "horaFinal": "00:40:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:43:56",
+            "sequencialItem": 2,
+            "horaFinal": "15:43:56",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-19",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994115323",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994115323",
+        "beneficiario": {
+          "nomeBeneficiario": "LUCAS RAMALHO SOARES",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888473575080015"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "20:45:00",
+            "sequencialItem": 1,
+            "horaFinal": "21:45:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "19:30:30",
+            "sequencialItem": 2,
+            "horaFinal": "20:30:30",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-18",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994115090",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994115090",
+        "beneficiario": {
+          "nomeBeneficiario": "JESSICA SOUSA OLIVEIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "00680007189580017"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "11:10:00",
+            "sequencialItem": 1,
+            "horaFinal": "12:10:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "15:36:27",
+            "sequencialItem": 2,
+            "horaFinal": "16:36:27",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-18",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994113270",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994113270",
+        "beneficiario": {
+          "nomeBeneficiario": "GIOVANNA P D N PEIGO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015435570106"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "11:05:00",
+            "sequencialItem": 1,
+            "horaFinal": "12:05:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "17:18:19",
+            "sequencialItem": 2,
+            "horaFinal": "18:18:19",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-19",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994113250",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994113250",
+        "beneficiario": {
+          "nomeBeneficiario": "ROBERTA AVILA PACHECO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888008422690113"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:50:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:50:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "12:53:32",
+            "sequencialItem": 2,
+            "horaFinal": "13:53:32",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-18",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994113028",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994113028",
+        "beneficiario": {
+          "nomeBeneficiario": "GUSTAVO R DA SILVA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "00522000886810017"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "23:55:00",
+            "sequencialItem": 1,
+            "horaFinal": "00:55:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:39:17",
+            "sequencialItem": 2,
+            "horaFinal": "15:39:17",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994112181",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994112181",
+        "beneficiario": {
+          "nomeBeneficiario": "RODRIGO COSTA SANTOS",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888481890160012"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "23:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "00:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "16:49:39",
+            "sequencialItem": 2,
+            "horaFinal": "17:49:39",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994112168",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994112168",
+        "beneficiario": {
+          "nomeBeneficiario": "GLEN HUDSON DE CASTRO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888011032830018"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "20:25:00",
+            "sequencialItem": 1,
+            "horaFinal": "21:25:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:32:16",
+            "sequencialItem": 2,
+            "horaFinal": "15:32:16",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994111889",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994111889",
+        "beneficiario": {
+          "nomeBeneficiario": "KELLY SHIMIZU",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01318540161880021"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "16:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "17:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:30:00",
+            "sequencialItem": 2,
+            "horaFinal": "14:30:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994111138",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994111138",
+        "beneficiario": {
+          "nomeBeneficiario": "MATEUS BARBOSA DA CUNHA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888462758100010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "12:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "13:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:31:38",
+            "sequencialItem": 2,
+            "horaFinal": "12:31:38",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994110127",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994110127",
+        "beneficiario": {
+          "nomeBeneficiario": "CASSIANO RICARDO TEZOTO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "00859001118000011"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "20:15:00",
+            "sequencialItem": 1,
+            "horaFinal": "21:15:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-15",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "15:17:24",
+            "sequencialItem": 2,
+            "horaFinal": "16:17:24",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994108329",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994108329",
+        "beneficiario": {
+          "nomeBeneficiario": "ANDREIA CRISTIAN COSTA SCHARER",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01243028030250026"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "18:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "19:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-12",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:45:34",
+            "sequencialItem": 2,
+            "horaFinal": "12:45:34",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-13",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994099542",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994099542",
+        "beneficiario": {
+          "nomeBeneficiario": "CAMILLY ODILON GONCALVES",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015361830010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "17:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "18:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-11",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "12:31:31",
+            "sequencialItem": 2,
+            "horaFinal": "13:31:31",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-12",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994097640",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994097640",
+        "beneficiario": {
+          "nomeBeneficiario": "CARLA REGIANE PEREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "00680006246620010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "09:00:00",
+            "sequencialItem": 1,
+            "horaFinal": "10:00:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-11",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "16:35:41",
+            "sequencialItem": 2,
+            "horaFinal": "17:35:41",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-11",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994095858",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994095858",
+        "beneficiario": {
+          "nomeBeneficiario": "WISLEY BUCHER",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888474970610020"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "09:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "10:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-08",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:10:51",
+            "sequencialItem": 2,
+            "horaFinal": "14:10:51",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-08",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994085862",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994085862",
+        "beneficiario": {
+          "nomeBeneficiario": "WESLEY MOREIRA DOS SANTOS",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01275003855070017"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "19:25:00",
+            "sequencialItem": 1,
+            "horaFinal": "20:25:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-07",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:02:33",
+            "sequencialItem": 2,
+            "horaFinal": "12:02:33",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-08",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994084794",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994084794",
+        "beneficiario": {
+          "nomeBeneficiario": "LIDIA F DE OLIVEIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888016561860019"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "09:15:00",
+            "sequencialItem": 1,
+            "horaFinal": "10:15:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-07",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:14:36",
+            "sequencialItem": 2,
+            "horaFinal": "15:14:36",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-07",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994082098",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994082098",
+        "beneficiario": {
+          "nomeBeneficiario": "MARCOS MOREIRA VAZ",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015284940015"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "22:45:00",
+            "sequencialItem": 1,
+            "horaFinal": "23:45:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-03",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "10:14:05",
+            "sequencialItem": 2,
+            "horaFinal": "11:14:05",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-04",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994075795",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994075795",
+        "beneficiario": {
+          "nomeBeneficiario": "GUILHERME MACHADO DE SA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888469173090026"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "21:40:00",
+            "sequencialItem": 1,
+            "horaFinal": "22:40:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-03",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:55:25",
+            "sequencialItem": 2,
+            "horaFinal": "15:55:25",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-04",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994075689",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994075689",
+        "beneficiario": {
+          "nomeBeneficiario": "CAROLINA GALLINA SANTOS",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888013826510016"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:25:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:25:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-03",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:42:43",
+            "sequencialItem": 2,
+            "horaFinal": "15:42:43",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-03",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994073448",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994073448",
+        "beneficiario": {
+          "nomeBeneficiario": "GIOVANNA P D N PEIGO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015435570106"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:45:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:45:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-02",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "15:42:32",
+            "sequencialItem": 2,
+            "horaFinal": "16:42:32",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-02",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994070357",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994070357",
+        "beneficiario": {
+          "nomeBeneficiario": "LETICIA TOLEDO VEIGA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "09001108052890017"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "23:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "00:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-01",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "10:58:31",
+            "sequencialItem": 2,
+            "horaFinal": "11:58:31",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-02",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994069445",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994069445",
+        "beneficiario": {
+          "nomeBeneficiario": "MARIANA VILLELA PEREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888477978850016"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "20:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "21:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-01",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:41:04",
+            "sequencialItem": 2,
+            "horaFinal": "12:41:04",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-02",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994069196",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994069196",
+        "beneficiario": {
+          "nomeBeneficiario": "ANNA MARIA ALBINO DE OLIVEIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888480994900014"
+        }
+      }
+    ],
+    "valorGlosado": 0.0,
+    "codigoOrigem": "2",
+    "valorLiberado": 0.0,
+    "codigoStatus": "EM_PROCESSAMENTO",
+    "reprocessamentos": 2,
+    "tentativas": 4,
+
+    "codigoTipoGuia": "S"
+  },
+
+ "valido": {
+    "reprocessarErroInterno": false,
+    "codigoStatusAns": "EM_ANALISE",
+    "versaoTISS": "3.05.00",
+    "valorApresentado": 195.0,
+    "errosInternos": [
+      {
+        "mensagem": "Erro de integração na regra do nivel lote [DadoRecebimentoPrestador][178] com a mensagem [Erro ao buscar o dado de recebimento CRONOGRAMA do prestador.] ",
+        "tipoErro": "INDISPENSAVEL"
+      }
+    ],
+    "enviadoSFTP": false,
+    "guias": [
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "00:05:00",
+            "sequencialItem": 1,
+            "horaFinal": "01:05:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-31",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "17:24:10",
+            "sequencialItem": 2,
+            "horaFinal": "18:24:10",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-31",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994155473",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994155473",
+        "beneficiario": {
+          "nomeBeneficiario": "MAYARA M M MADRIGALI",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888477329630015"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "22:50:00",
+            "sequencialItem": 1,
+            "horaFinal": "23:50:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-30",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:05:18",
+            "sequencialItem": 2,
+            "horaFinal": "14:05:18",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-09-01",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994155417",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994155417",
+        "beneficiario": {
+          "nomeBeneficiario": "GLAUCIA PINHEIRO P DA FONSECA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888472096580010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "09:15:00",
+            "sequencialItem": 1,
+            "horaFinal": "10:15:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-30",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:51:28",
+            "sequencialItem": 2,
+            "horaFinal": "12:51:28",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-31",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994152397",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994152397",
+        "beneficiario": {
+          "nomeBeneficiario": "RODRIGO COUTO ZANONI",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01275001723690100"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:15:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:15:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-29",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "20:48:21",
+            "sequencialItem": 2,
+            "horaFinal": "21:48:21",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-29",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994148842",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994148842",
+        "beneficiario": {
+          "nomeBeneficiario": "LUCAS SILVA DOS SANTOS",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888482100780100"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "11:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "12:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-28",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "17:54:13",
+            "sequencialItem": 2,
+            "horaFinal": "18:54:13",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-28",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994144975",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994144975",
+        "beneficiario": {
+          "nomeBeneficiario": "ELISA CRISTIANE DEZEMBRO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888477177740018"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "15:45:00",
+            "sequencialItem": 1,
+            "horaFinal": "16:45:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-25",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "17:40:03",
+            "sequencialItem": 2,
+            "horaFinal": "18:40:03",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-25",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994139173",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994139173",
+        "beneficiario": {
+          "nomeBeneficiario": "VERONICA CARVALHO DE QUEIROZ",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888013644780018"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "18:55:00",
+            "sequencialItem": 1,
+            "horaFinal": "19:55:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-24",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "09:38:28",
+            "sequencialItem": 2,
+            "horaFinal": "10:38:28",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-25",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994136394",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994136394",
+        "beneficiario": {
+          "nomeBeneficiario": "ISABELA PAZ LEITE SUBENCO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888016507880023"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "16:30:00",
+            "sequencialItem": 1,
+            "horaFinal": "17:30:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:41:44",
+            "sequencialItem": 2,
+            "horaFinal": "14:41:44",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-24",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994132282",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994132282",
+        "beneficiario": {
+          "nomeBeneficiario": "ISABELLA MARIA ORLANDI DA SILVA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888012902980016"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "08:50:00",
+            "sequencialItem": 1,
+            "horaFinal": "09:50:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "15:37:37",
+            "sequencialItem": 2,
+            "horaFinal": "16:37:37",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994130303",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994130303",
+        "beneficiario": {
+          "nomeBeneficiario": "MARIANA VAN DURSEN G COSTA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01318540045710026"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "22:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "23:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-22",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:53:04",
+            "sequencialItem": 2,
+            "horaFinal": "12:53:04",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994129683",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994129683",
+        "beneficiario": {
+          "nomeBeneficiario": "LAURA DE CARVALHO NAIME",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888466098520028"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "19:10:00",
+            "sequencialItem": 1,
+            "horaFinal": "20:10:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-22",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "10:55:37",
+            "sequencialItem": 2,
+            "horaFinal": "11:55:37",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-23",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994129157",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994129157",
+        "beneficiario": {
+          "nomeBeneficiario": "MARIANA L DE ANDRADE",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888013407510025"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "18:00:00",
+            "sequencialItem": 1,
+            "horaFinal": "19:00:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-21",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:49:23",
+            "sequencialItem": 2,
+            "horaFinal": "14:49:23",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-22",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994125038",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994125038",
+        "beneficiario": {
+          "nomeBeneficiario": "ALINE CRISTINA SANTOS FERREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888479575150012"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "11:30:00",
+            "sequencialItem": 1,
+            "horaFinal": "12:30:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-21",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "18:08:44",
+            "sequencialItem": 2,
+            "horaFinal": "19:08:44",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-21",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994123270",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994123270",
+        "beneficiario": {
+          "nomeBeneficiario": "NICOLE EVELYN DAS NEVES FERREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015339140104"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "08:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "09:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-21",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "10:54:31",
+            "sequencialItem": 2,
+            "horaFinal": "11:54:31",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-22",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994122175",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994122175",
+        "beneficiario": {
+          "nomeBeneficiario": "VIVIANE BOREGIO TRINDADE",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888476027880010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:25:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:25:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-19",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "12:19:05",
+            "sequencialItem": 2,
+            "horaFinal": "13:19:05",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-20",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994118922",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994118922",
+        "beneficiario": {
+          "nomeBeneficiario": "HELENA CORREA STARLING BRAGA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888468609310100"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "22:50:00",
+            "sequencialItem": 1,
+            "horaFinal": "23:50:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-18",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:28:20",
+            "sequencialItem": 2,
+            "horaFinal": "12:28:20",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-20",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994118428",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994118428",
+        "beneficiario": {
+          "nomeBeneficiario": "HELLEN DOS SANTOS FERREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888479553270015"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "23:40:00",
+            "sequencialItem": 1,
+            "horaFinal": "00:40:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:43:56",
+            "sequencialItem": 2,
+            "horaFinal": "15:43:56",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-19",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994115323",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994115323",
+        "beneficiario": {
+          "nomeBeneficiario": "LUCAS RAMALHO SOARES",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888473575080015"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "20:45:00",
+            "sequencialItem": 1,
+            "horaFinal": "21:45:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "19:30:30",
+            "sequencialItem": 2,
+            "horaFinal": "20:30:30",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-18",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994115090",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994115090",
+        "beneficiario": {
+          "nomeBeneficiario": "JESSICA SOUSA OLIVEIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "00680007189580017"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "11:10:00",
+            "sequencialItem": 1,
+            "horaFinal": "12:10:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "15:36:27",
+            "sequencialItem": 2,
+            "horaFinal": "16:36:27",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-18",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994113270",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994113270",
+        "beneficiario": {
+          "nomeBeneficiario": "GIOVANNA P D N PEIGO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015435570106"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "11:05:00",
+            "sequencialItem": 1,
+            "horaFinal": "12:05:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "17:18:19",
+            "sequencialItem": 2,
+            "horaFinal": "18:18:19",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-19",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994113250",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994113250",
+        "beneficiario": {
+          "nomeBeneficiario": "ROBERTA AVILA PACHECO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888008422690113"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:50:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:50:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "12:53:32",
+            "sequencialItem": 2,
+            "horaFinal": "13:53:32",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-18",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994113028",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994113028",
+        "beneficiario": {
+          "nomeBeneficiario": "GUSTAVO R DA SILVA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "00522000886810017"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "23:55:00",
+            "sequencialItem": 1,
+            "horaFinal": "00:55:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:39:17",
+            "sequencialItem": 2,
+            "horaFinal": "15:39:17",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994112181",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994112181",
+        "beneficiario": {
+          "nomeBeneficiario": "RODRIGO COSTA SANTOS",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888481890160012"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "23:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "00:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "16:49:39",
+            "sequencialItem": 2,
+            "horaFinal": "17:49:39",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994112168",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994112168",
+        "beneficiario": {
+          "nomeBeneficiario": "GLEN HUDSON DE CASTRO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888011032830018"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "20:25:00",
+            "sequencialItem": 1,
+            "horaFinal": "21:25:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:32:16",
+            "sequencialItem": 2,
+            "horaFinal": "15:32:16",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994111889",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994111889",
+        "beneficiario": {
+          "nomeBeneficiario": "KELLY SHIMIZU",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01318540161880021"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "16:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "17:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:30:00",
+            "sequencialItem": 2,
+            "horaFinal": "14:30:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994111138",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994111138",
+        "beneficiario": {
+          "nomeBeneficiario": "MATEUS BARBOSA DA CUNHA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888462758100010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "12:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "13:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:31:38",
+            "sequencialItem": 2,
+            "horaFinal": "12:31:38",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-17",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994110127",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994110127",
+        "beneficiario": {
+          "nomeBeneficiario": "CASSIANO RICARDO TEZOTO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "00859001118000011"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "20:15:00",
+            "sequencialItem": 1,
+            "horaFinal": "21:15:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-15",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "15:17:24",
+            "sequencialItem": 2,
+            "horaFinal": "16:17:24",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-16",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994108329",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994108329",
+        "beneficiario": {
+          "nomeBeneficiario": "ANDREIA CRISTIAN COSTA SCHARER",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01243028030250026"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "18:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "19:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-12",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:45:34",
+            "sequencialItem": 2,
+            "horaFinal": "12:45:34",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-13",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994099542",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994099542",
+        "beneficiario": {
+          "nomeBeneficiario": "CAMILLY ODILON GONCALVES",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015361830010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "17:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "18:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-11",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "12:31:31",
+            "sequencialItem": 2,
+            "horaFinal": "13:31:31",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-12",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994097640",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994097640",
+        "beneficiario": {
+          "nomeBeneficiario": "CARLA REGIANE PEREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "00680006246620010"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "09:00:00",
+            "sequencialItem": 1,
+            "horaFinal": "10:00:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-11",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "16:35:41",
+            "sequencialItem": 2,
+            "horaFinal": "17:35:41",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-11",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994095858",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994095858",
+        "beneficiario": {
+          "nomeBeneficiario": "WISLEY BUCHER",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888474970610020"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "09:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "10:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-08",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "13:10:51",
+            "sequencialItem": 2,
+            "horaFinal": "14:10:51",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-08",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994085862",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994085862",
+        "beneficiario": {
+          "nomeBeneficiario": "WESLEY MOREIRA DOS SANTOS",
+          "atendimentoRn": "N",
+          "numeroCarteira": "01275003855070017"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "19:25:00",
+            "sequencialItem": 1,
+            "horaFinal": "20:25:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-07",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:02:33",
+            "sequencialItem": 2,
+            "horaFinal": "12:02:33",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-08",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994084794",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994084794",
+        "beneficiario": {
+          "nomeBeneficiario": "LIDIA F DE OLIVEIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888016561860019"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "09:15:00",
+            "sequencialItem": 1,
+            "horaFinal": "10:15:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-07",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:14:36",
+            "sequencialItem": 2,
+            "horaFinal": "15:14:36",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-07",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994082098",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994082098",
+        "beneficiario": {
+          "nomeBeneficiario": "MARCOS MOREIRA VAZ",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015284940015"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "22:45:00",
+            "sequencialItem": 1,
+            "horaFinal": "23:45:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-03",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "10:14:05",
+            "sequencialItem": 2,
+            "horaFinal": "11:14:05",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-04",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994075795",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994075795",
+        "beneficiario": {
+          "nomeBeneficiario": "GUILHERME MACHADO DE SA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888469173090026"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "21:40:00",
+            "sequencialItem": 1,
+            "horaFinal": "22:40:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-03",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:55:25",
+            "sequencialItem": 2,
+            "horaFinal": "15:55:25",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-04",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994075689",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994075689",
+        "beneficiario": {
+          "nomeBeneficiario": "CAROLINA GALLINA SANTOS",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888013826510016"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:25:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:25:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-03",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "14:42:43",
+            "sequencialItem": 2,
+            "horaFinal": "15:42:43",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-03",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994073448",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994073448",
+        "beneficiario": {
+          "nomeBeneficiario": "GIOVANNA P D N PEIGO",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888015435570106"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "10:45:00",
+            "sequencialItem": 1,
+            "horaFinal": "11:45:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-02",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "15:42:32",
+            "sequencialItem": 2,
+            "horaFinal": "16:42:32",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-02",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994070357",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994070357",
+        "beneficiario": {
+          "nomeBeneficiario": "LETICIA TOLEDO VEIGA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "09001108052890017"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "23:20:00",
+            "sequencialItem": 1,
+            "horaFinal": "00:20:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-01",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "10:58:31",
+            "sequencialItem": 2,
+            "horaFinal": "11:58:31",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-02",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994069445",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994069445",
+        "beneficiario": {
+          "nomeBeneficiario": "MARIANA VILLELA PEREIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888477978850016"
+        }
+      },
+      {
+        "valorLiberado": 0.0,
+        "procedimentosExecutados": [
+          {
+            "horaInicial": "20:35:00",
+            "sequencialItem": 1,
+            "horaFinal": "21:35:00",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 77.05,
+            "dataExecucao": "2023-08-01",
+            "valorTotal": 77.05,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "Teletriagem",
+              "codigoProcedimento": "10014179",
+              "codigoTabela": "00"
+            }
+          },
+          {
+            "horaInicial": "11:41:04",
+            "sequencialItem": 2,
+            "horaFinal": "12:41:04",
+            "viaAcesso": "1",
+            "qtdExecutada": 1.0,
+            "reducaoAcrescimo": 1.0,
+            "valorUnitario": 5.0,
+            "dataExecucao": "2023-08-02",
+            "valorTotal": 5.0,
+            "tecnicaUtilizada": "1",
+            "procedimento": {
+              "descricaoProcedimento": "TELEMONITORAMENTO DE ENFERMAGEM",
+              "codigoProcedimento": "10014039",
+              "codigoTabela": "00"
+            }
+          }
+        ],
+        "valorGlosa": 0.0,
+        "numeroGuiaOperadora": "9994069196",
+        "despesas": [],
+        "valorProcessado": 5.0,
+        "numeroGuiaPrestador": "9994069196",
+        "beneficiario": {
+          "nomeBeneficiario": "ANNA MARIA ALBINO DE OLIVEIRA",
+          "atendimentoRn": "N",
+          "numeroCarteira": "88888480994900014"
+        }
+      }
+    ],
+    "valorGlosado": 0.0,
+    "codigoOrigem": "2",
+    "valorLiberado": 0.0,
+    "codigoStatus": "EM_PROCESSAMENTO",
+    "reprocessamentos": 2,
+    "tentativas": 4,
+    "criticas": [
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994144975",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888477177740018] - [Numero da Guia do Prestador: 9994144975]"
+      },
+      {
+
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994155473",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888477329630015] - [Numero da Guia do Prestador: 9994155473]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994155417",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888472096580010] - [Numero da Guia do Prestador: 9994155417]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994148842",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888482100780100] - [Numero da Guia do Prestador: 9994148842]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994139173",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994139173]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994152397",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994152397]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994144975",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994144975]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994155417",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994155417]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994148842",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994148842]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994155473",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994155473]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994136394",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888016507880023] - [Numero da Guia do Prestador: 9994136394]"
+      },
+      {
+        "termo": "NÃO FOI POSSÍVEL VALIDAR O ARQUIVO XML",
+        "codigoTermo": 5002,
+        "codigoRegra": 156,
+        "codigoGuia": "9994152397",
+        "descricaoMensagem": "[CRM informado está inválido] - [Numero do CRM: 17843] - [Numero da Guia do Prestador: 9994152397]"
+      },
+      {
+        "termo": "NÃO FOI POSSÍVEL VALIDAR O ARQUIVO XML",
+        "codigoTermo": 5002,
+        "codigoRegra": 156,
+        "codigoGuia": "9994155417",
+        "descricaoMensagem": "[CRM informado está inválido] - [Numero do CRM: 17843] - [Numero da Guia do Prestador: 9994155417]"
+      },
+      {
+        "termo": "NÃO FOI POSSÍVEL VALIDAR O ARQUIVO XML",
+        "codigoTermo": 5002,
+        "codigoRegra": 156,
+        "codigoGuia": "9994155473",
+        "descricaoMensagem": "[CRM informado está inválido] - [Numero do CRM: 17843] - [Numero da Guia do Prestador: 9994155473]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994132282",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888012902980016] - [Numero da Guia do Prestador: 9994132282]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994136394",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994136394]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994130303",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994130303]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994125038",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888479575150012] - [Numero da Guia do Prestador: 9994125038]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994129157",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888013407510025] - [Numero da Guia do Prestador: 9994129157]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994132282",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994132282]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994129683",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994129683]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994122175",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888476027880010] - [Numero da Guia do Prestador: 9994122175]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994123270",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888015339140104] - [Numero da Guia do Prestador: 9994123270]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994129157",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994129157]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994125038",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994125038]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994118428",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888479553270015] - [Numero da Guia do Prestador: 9994118428]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994122175",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994122175]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994118922",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994118922]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994123270",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994123270]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994115323",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888473575080015] - [Numero da Guia do Prestador: 9994115323]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994113270",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888015435570106] - [Numero da Guia do Prestador: 9994113270]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994118428",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994118428]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994115090",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994115090]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994115323",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994115323]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994113250",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994113250]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994113270",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994113270]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994112181",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888481890160012] - [Numero da Guia do Prestador: 9994112181]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994113028",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994113028]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994110127",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 00859001118000011] - [Numero da Guia do Prestador: 9994110127]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994112168",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994112168]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994112181",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994112181]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994111889",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994111889]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994108329",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994108329]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994111138",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994111138]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994095858",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888474970610020] - [Numero da Guia do Prestador: 9994095858]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994099542",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888015361830010] - [Numero da Guia do Prestador: 9994099542]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994085862",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 01275003855070017] - [Numero da Guia do Prestador: 9994085862]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994110127",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994110127]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994084794",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888016561860019] - [Numero da Guia do Prestador: 9994084794]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994097640",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994097640]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994082098",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888015284940015] - [Numero da Guia do Prestador: 9994082098]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994099542",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994099542]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994095858",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994095858]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994085862",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994085862]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994084794",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994084794]"
+      },
+      {
+        "termo": "NÃO FOI POSSÍVEL VALIDAR O ARQUIVO XML",
+        "codigoTermo": 5002,
+        "codigoRegra": 156,
+        "codigoGuia": "9994097640",
+        "descricaoMensagem": "[CRM informado está inválido] - [Numero do CRM: 22050] - [Numero da Guia do Prestador: 9994097640]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994075689",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888013826510016] - [Numero da Guia do Prestador: 9994075689]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994082098",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994082098]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994075795",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888469173090026] - [Numero da Guia do Prestador: 9994075795]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994073448",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888015435570106] - [Numero da Guia do Prestador: 9994073448]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994069196",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888480994900014] - [Numero da Guia do Prestador: 9994069196]"
+      },
+      {
+        "termo": "IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+        "codigoTermo": 1011,
+        "codigoRegra": 126,
+        "codigoGuia": "9994069445",
+        "descricaoMensagem": "[Código do beneficiário inválido] - [Numero da carteira: 88888477978850016] - [Numero da Guia do Prestador: 9994069445]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994070357",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994070357]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994075689",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994075689]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994073448",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994073448]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994075795",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994075795]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994069445",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994069445]"
+      },
+      {
+        "termo": "VALOR INFORMADO DA GUIA DIFERENTE DO SOMATÓRIO DO VALOR INFORMADO DOS ITENS",
+        "codigoTermo": 5042,
+        "codigoRegra": 186,
+        "codigoGuia": "9994069196",
+        "descricaoMensagem": "[Total geral de procedimentos não confere] [somatória dos procedimentos: 82.05][valor da tag valorProcedimentos: 5][número da guia: 9994069196]"
+      }
+    ],
+    "codigoTipoGuia": "S"
+  }
+}

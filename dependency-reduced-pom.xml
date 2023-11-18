@@ -111,6 +111,11 @@
   </repositories>
   <dependencies>
     <dependency>
+      <groupId>com.damnhandy</groupId>
+      <artifactId>java-uri-templates</artifactId>
+      <version>0.9.5</version> <!-- Verifique a versão mais recente no repositório Maven -->
+    </dependency>
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.12</version>

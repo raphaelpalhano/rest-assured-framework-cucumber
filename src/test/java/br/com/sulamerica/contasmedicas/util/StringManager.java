@@ -1,5 +1,8 @@
 package br.com.sulamerica.contasmedicas.util;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -37,6 +40,15 @@ public class StringManager {
 	    }
 	    
 	    return map;
+	}
+
+
+	public static Map<String, String> conversorJsonToMap(String json) throws JsonProcessingException {
+		ObjectMapper objectMapper = new ObjectMapper();
+		Map<String, String> resultMap = objectMapper.readValue(json, Map.class);
+		System.out.println("Map result: " + resultMap);
+
+		return resultMap;
 	}
 	
 	
