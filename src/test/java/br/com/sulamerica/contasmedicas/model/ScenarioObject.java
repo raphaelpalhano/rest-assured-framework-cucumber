@@ -3,16 +3,18 @@ package br.com.sulamerica.contasmedicas.model;
 import java.util.LinkedHashMap;
 
 public class ScenarioObject {
-	private static String env_tag;
+	private static String serviceName;
 	private static String scenario_name;
 	private static String path_url;
 
-	public static String getEnv_tag() {
-		return env_tag;
+	private static String envName;
+
+	public static String getServiceName() {
+		return serviceName;
 	}
 
-	public static void setEnv_tag(String env_tag) {
-		ScenarioObject.env_tag = env_tag;
+	public static void setServiceName(String serviceName) {
+		ScenarioObject.serviceName = serviceName;
 	}
 
 	public static String getScenario_name() {
@@ -36,5 +38,13 @@ public class ScenarioObject {
 		LinkedHashMap<String, String> paramsMap = LinkedHashMap.class.cast(
 				LinkedHashMap.class.cast(EnvObject.getPath_url().get(ScenarioObject.getPath_url())).get("params"));
 		return paramsMap;
+	}
+
+	public static String getEnvName() {
+		return envName;
+	}
+
+	public static void setEnvName(String envName) {
+		ScenarioObject.envName = envName;
 	}
 }

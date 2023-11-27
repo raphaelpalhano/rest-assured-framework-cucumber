@@ -15,13 +15,13 @@ import io.restassured.response.Response;
 public class PreConditionUploadGuias {
 	
 	@Dado("^que o client side gera o protocolo \"(.*?)\" pelo endpoint \"(.*?)\"$")
-	public void gerandoProtocoloGuias(String condicao, String endpoint) throws Exception {
+	public void gerandoProtocoloGuias(String condicao, String path) throws Exception {
 		Response response;
 		JsonUtil jsonUtil = new JsonUtil("protocolo-integracao");
 		String json = jsonUtil.getJsonWitKey(condicao).toString();
 		Map<String, String> params = StringManager.conversorJsonToMap(json);
 		
-		response = RequestManager.postWithQueryParams(endpoint, params);
+		response = RequestManager.postWithQueryParams(path, params);
 		ResponseAPI.setResponse(response);
 
 		if(response.statusCode() == 200) {

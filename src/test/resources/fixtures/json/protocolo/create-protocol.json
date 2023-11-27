@@ -5,7 +5,7 @@
       "nome_arquivo_recebido": "435867_b4db8869448c56d1dfeb1aaea83e2a5f.zip",
       "prestador":
       {
-        "codigo":"100000017475",
+        "codigo":"100000010577",
         "nome": "teste"
       }
     },
@@ -16,14 +16,13 @@
     "nome-arquivo-invalido": {
       "prestador":
       {
-        "codigo":"100000017475",
+        "codigo":"100000010577",
         "nome": "teste"
       },
-      "nome_arquivo_recebido": "",
       "codigo_origem": "2"
     },
     "codigo-origem-invalido": {
-      "codigo_prestador": "100000017475",
+      "codigo_prestador": "100000010577",
       "nome_arquivo_recebido": "guias.zip",
       "codigo_origem": "a"
     },

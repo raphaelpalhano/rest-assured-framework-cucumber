@@ -21,6 +21,7 @@ public class ScenarioManager {
 		List<File> features = new LinkedList<File>();
 		String tag = null;
 		String path_url = null;
+		String envFeature = null;
 		boolean scenarioFinded = false;
 		if (new File(FEATURE_PATH).isDirectory()) {
 			features = Arrays.asList(new File(FEATURE_PATH).listFiles());
@@ -31,16 +32,18 @@ public class ScenarioManager {
 			if (scenarioFinded)
 				break;
 			String featureContent = new String(Files.readAllBytes(feature.toPath()));
+			envFeature = StringManager.substringByRegex(featureContent.split("\r?\n")[0].replaceAll("@", ""), "[Ee]nv\\S*")
+					.replaceAll("[Ee]nv.?", "");
 			List<String> scenarioNameList = StringManager.getListMatcherByRegex(featureContent,
 					"\\@.*\\r?\\n\\s*?.*\\:.*\\r?\\n");
 			for (String scenarioName : scenarioNameList) {
-				tag = StringManager.substringByRegex(scenarioName.split("\r?\n")[0].replaceAll("\\@", ""), "[Ee]nv\\S*")
-						.replaceAll("[Ee]nv.?", "");
-				path_url =  StringManager.substringByRegex(scenarioName.split("\r?\n")[0].replaceAll("\\@", ""), "[pP]ath.[Uu]rl.\\S*")
+				tag = StringManager.substringByRegex(scenarioName.split("\r?\n")[0].replaceAll("@", ""), "[Ss]ervice\\S*")
+						.replaceAll("[Ss]ervice.?", "");
+				path_url =  StringManager.substringByRegex(scenarioName.split("\r?\n")[0].replaceAll("@", ""), "[pP]ath.[Uu]rl.\\S*")
 						.replaceAll("[pP]ath.[Uu]rl.", "");
 				String scenario = scenarioName.split("\r?\n")[1].split("\\s*\\:\\s*")[1];
 				if (scenario.equals(ScenarioObject.getScenario_name())) {
-					ScenarioObject.setEnv_tag(tag);
+					ScenarioObject.setServiceName(tag);
 					ScenarioObject.setPath_url(path_url);
 					scenarioFinded = true;
 					break;

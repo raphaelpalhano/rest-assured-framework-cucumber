@@ -114,14 +114,14 @@ public class RequestManager {
 	}
 
 
-	public static Response post(String body) throws Exception {
+	public static Response post(String path, String body) throws Exception {
 
 		Map<String, String> headers = EnvObject.getHeaders();
 		headers.putAll(EnvObject.getHeaders());
 		headers.putAll(EnvObject.getToken());
 
 		Response response = given().contentType(EnvObject.getContent_type()).with().body(body).headers(headers)
-				.when().post(Request.getPath());
+				.when().post(path);
 		response.then().log().all();
 
 		return response;
@@ -144,13 +144,13 @@ public class RequestManager {
 
 	}
 
-	public static Response put(String pathParam, String body) throws Exception {
+	public static Response put(String path, String pathParam, String body) throws Exception {
 
 		Map<String, String> headers = EnvObject.getHeaders();
 		headers.putAll(EnvObject.getHeaders());
 		headers.putAll(EnvObject.getToken());
 
-		Response response = given().contentType(EnvObject.getContent_type()).basePath(Request.getPath()).with().body(body).headers(headers)
+		Response response = given().contentType(EnvObject.getContent_type()).basePath(path).with().body(body).headers(headers)
 				.when().put(pathParam);
 		response.then().log().all();
 
@@ -208,23 +208,24 @@ public class RequestManager {
 	}
 	
 	
-	public static Response getWithPathParam(String endpoint, String param) {
+	public static Response getWithPathParam(String path, String param) {
 		Map<String, String> headers = EnvObject.getHeaders();
 		headers.putAll(EnvObject.getToken());
 
-		Response response = given().with().headers(headers).when().get(Request.getPath() + endpoint + param);
+		Response response = given().with().headers(headers).when().get(path + param);
 		response.then().log().all();
-				
-		if(response.getStatusCode() == 200)
-			return response.then().extract().response();
-		else {
-			try {
-				throw new Exception("Nao foi possivel fazer a requisição. O response retornou status code [ "+response.getStatusCode()+ " ].");
-			} catch (Exception e) {
-				LOGGER.log(Level.SEVERE, "problema ao gerar a excecao do status code!", e);
-			}
-		}
-		return null;
+		return response.then().extract().response();
+
+	}
+
+	public static Response getWithPathParam(String url, String path, String param) {
+		Map<String, String> headers = EnvObject.getHeaders();
+		headers.putAll(EnvObject.getToken());
+
+		Response response = given().with().baseUri(url).headers(headers).when().get(path + param);
+		response.then().log().all();
+		return response.then().extract().response();
+
 	}
 
 
@@ -317,22 +318,22 @@ public class RequestManager {
 	public static String generateToken() throws Exception {
 		jsonManipulator = new JsonUtil();
 		String token = null;
-		String body = "";
+		StringBuilder body = new StringBuilder();
 		Map<String, String> paramsRequest = StringManager.conversorStringToMap(EnvObject.getAuthetication().get("Body").toString());
 		Map<String, String> headers = StringManager.conversorStringToMap(EnvObject.getAuthetication().get("Headers").toString());
-		headers.put("Authorization", "Basic dnBwLXZhbGlkYS10b2tlbi1oOmRmOWFmMzlmLWNlODItNGRmNy1hMmRhLWViYjc1YWE0ODkwZA==");
+		headers.put("Authorization", "Basic bXMtYXJxdWl2b3MtaW50ZWdyYWNhby10aXNzLWg6ZEtib2NDbHlwN09qTXZzQUd4ajl4RnhiaTZVaHRPV2k=");
 		for(Entry<String, String> entry: paramsRequest.entrySet()) {
-			body += entry.getKey() + "=" + entry.getValue() + "&";
+			body.append(entry.getKey()).append("=").append(entry.getValue()).append("&");
 
 		}
-		if (!body.isEmpty() && body.endsWith("&")) {
+		if ((!body.isEmpty()) && body.toString().endsWith("&")) {
 		    // Remova o '&' do final da string
-		    body = body.substring(0, body.length() - 1);
+		    body = new StringBuilder(body.substring(0, body.length() - 1));
 		}
 		
 		Response response = 
 				given().headers(headers).config(RestAssuredConfig.config().decoderConfig(DecoderConfig.decoderConfig().defaultContentCharset("UTF-8")).and().sslConfig(new SSLConfig().relaxedHTTPSValidation()))
-	             .body(body)
+	             .body(body.toString())
                 .when()
 	                .post(EnvObject.getAuthenticate_url());
 		response.then().log().all();

@@ -8,7 +8,7 @@
         </ans:identificacaoTransacao>
         <ans:origem>
             <ans:identificacaoPrestador>
-                <ans:codigoPrestadorNaOperadora>100000017475</ans:codigoPrestadorNaOperadora>
+                <ans:codigoPrestadorNaOperadora>100000010577</ans:codigoPrestadorNaOperadora>
             </ans:identificacaoPrestador>
         </ans:origem>
         <ans:destino>
@@ -18,12 +18,12 @@
     </ans:cabecalho>
     <ans:prestadorParaOperadora>
         <ans:loteGuias>
-            <ans:numeroLote>5442780252</ans:numeroLote>
+            <ans:numeroLote>2474130989</ans:numeroLote>
             <ans:guiasTISS>
                 <ans:guiaSP-SADT>
                     <ans:cabecalhoGuia>
                         <ans:registroANS>006246</ans:registroANS>
-                        <ans:numeroGuiaPrestador>9334004214</ans:numeroGuiaPrestador>
+                        <ans:numeroGuiaPrestador>8975023687</ans:numeroGuiaPrestador>
                         <ans:guiaPrincipal>3018695</ans:guiaPrincipal>
                     </ans:cabecalhoGuia>
                     <ans:dadosAutorizacao>
@@ -37,7 +37,7 @@
                     </ans:dadosBeneficiario>
                     <ans:dadosSolicitante>
                         <ans:contratadoSolicitante>
-                            <ans:codigoPrestadorNaOperadora>100000017475</ans:codigoPrestadorNaOperadora>
+                            <ans:codigoPrestadorNaOperadora>100000010577</ans:codigoPrestadorNaOperadora>
                             <ans:nomeContratado>Hospital Alem?o Oswaldo Cruz</ans:nomeContratado>
                         </ans:contratadoSolicitante>
                         <ans:profissionalSolicitante>
@@ -54,7 +54,7 @@
                     </ans:dadosSolicitacao>
                     <ans:dadosExecutante>
                         <ans:contratadoExecutante>
-                            <ans:codigoPrestadorNaOperadora>100000017475</ans:codigoPrestadorNaOperadora>
+                            <ans:codigoPrestadorNaOperadora>100000010577</ans:codigoPrestadorNaOperadora>
                             <ans:nomeContratado>HOSPITAL SANTA VIRGINIA</ans:nomeContratado>
                         </ans:contratadoExecutante>
                         <ans:CNES>2078457</ans:CNES>

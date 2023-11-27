@@ -14,3 +14,12 @@ https://{domain}.atlassian.net/rest/api/2/project
 **Run Integration Test**
 
  mvn clean verify -Dtest=RunTestsIT
+ 
+
+## Test steps
+
+Validar o resultado do firestore antigo
+com resulto do novo
+
+
+google.cloud.firestore

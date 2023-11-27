@@ -1,4 +1,5 @@
 # language: pt
+@env_homolog
 Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
 
     Serviço ms-arquivo-integracao upload de arquivos
@@ -6,12 +7,12 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
 
     # Guias sadt
 
-    @AUTOMATED @env_ms-integracao @path_url:prestadores 
+    @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de guias validas
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client side faz upload do arquivo tipo "guias-sadt-valido" com os dados
         """
-        ans:codigoPrestadorNaOperadora=100000017475
+        ans:codigoPrestadorNaOperadora=100000010577
         """
         Entao retonar o codigo protocolo registrado
 
@@ -21,7 +22,7 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client side faz upload do arquivo tipo "guias-sadt-invalido" com os dados
         """
-        ans:codigoPrestadorNaOperadora=100000017474
+        ans:codigoPrestadorNaOperadora=100000010279
         ans:dataRegistroTransacao=2023-10-06
         """
         Entao retornar o codigo status do protocolo "BLOQUEADO"
@@ -64,7 +65,7 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client side faz upload do arquivo tipo "guias-consulta-formato-invalido" com os dados
         """
-        ans:codigoPrestadorNaOperadora=100000017475
+        ans:codigoPrestadorNaOperadora=100000010577
         ans:tipoTransacao=ENVIO_LOTE_GUIAS
         """
         Entao retonar o codigo protocolo registrado

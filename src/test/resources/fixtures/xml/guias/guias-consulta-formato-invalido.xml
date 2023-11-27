@@ -8,7 +8,7 @@
     </ans:identificacaoTransacao>
     <ans:origem>
       <ans:identificacaoPrestador>
-        <ans:codigoPrestadorNaOperadora>100000017475</ans:codigoPrestadorNaOperadora>
+        <ans:codigoPrestadorNaOperadora>100000010577</ans:codigoPrestadorNaOperadora>
       </ans:identificacaoPrestador>
     </ans:origem>
     <ans:destino>
@@ -18,12 +18,12 @@
   </ans:cabecalho>
   <ans:prestadorParaOperadora>
     <ans:loteGuias>
-      <ans:numeroLote>7075453041</ans:numeroLote>
+      <ans:numeroLote>2351833108</ans:numeroLote>
       <ans:guiasTISS>
         <ans:guiaConsulta>
           <ans:cabecalhoConsulta>
             <ans:registroANS>006246</ans:registroANS>
-            <ans:numeroGuiaPrestador>6463214756</ans:numeroGuiaPrestador>
+            <ans:numeroGuiaPrestador>5904403993</ans:numeroGuiaPrestador>
           </ans:cabecalhoConsulta>
           <ans:numeroGuiaOperadora>000874258426</ans:numeroGuiaOperadora>
           <ans:dadosBeneficiario>
@@ -32,7 +32,7 @@
             <ans:nomeBeneficiario>DARIO GASPERINI FILHO</ans:nomeBeneficiario>
           </ans:dadosBeneficiario>
           <ans:contratadoExecutante>
-            <ans:codigoPrestadorNaOperadora>100000017475</ans:codigoPrestadorNaOperadora>
+            <ans:codigoPrestadorNaOperadora>100000010577</ans:codigoPrestadorNaOperadora>
             <ans:nomeContratado>REDE DOR SAO LUIZ S.A. - CENTRO MEDICO VIVALLE</ans:nomeContratado>
             <ans:CNES>7034938</ans:CNES>
           </ans:contratadoExecutante>

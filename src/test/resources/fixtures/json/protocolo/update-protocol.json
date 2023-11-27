@@ -1,10 +1,10 @@
 {
 
-  "sem-criticas-erro": {
-    "reprocessarErroInterno": false,
-    "codigoStatusAns": "EM_ANALISE",
+  "invalido": {
+    "reprocessarErroInterno": "abc",
+    "codigoStatusAns": "EM_ANALISESS",
     "versaoTISS": "3.05.00",
-    "valorApresentado": 195.0,
+    "valorApresentado": "ax",
     "enviadoSFTP": false,
     "guias": [
       {

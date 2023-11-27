@@ -22,13 +22,17 @@ public class ActionProtocolo {
 	public void gerandoProtocolo(String condicao) throws Exception {
 		//Arrange
 		JsonUtil jsonUtil = new JsonUtil("create-protocol");
+		HashMap<String, String> params = new HashMap<String, String>();
 		String requestBody = jsonUtil.getKeyObject(condicao).toString();
 
 		//Action
-		Response response = RequestManager.post(requestBody);
+		Response response = RequestManager.post(Request.getPath(), requestBody);
 		ResponseAPI.setResponse(response);
 		if(response.statusCode() == 201) {
 			Request.setPathParam(response.jsonPath().get("numero_chave_lote").toString());
+			params.put("codigo-protocolo", response.jsonPath().get("codigo").toString());
+			params.put("codigo-prestador", response.jsonPath().get("prestador.codigo").toString());
+			Request.setParam(params);
 		}
 
 
@@ -37,13 +41,21 @@ public class ActionProtocolo {
 
 	@Quando("que o client side atualiza o protocolo {string}")
 	public void atualizandoProtocolo(String condicao) throws Exception {
-		//Arrange
-		JsonUtil jsonUtil = new JsonUtil("update-protocol");
-		JSONObject requestBody = jsonUtil.getJsonWitKey(condicao);
+		JSONObject requestBody;
+		Response response;
 
-		//Action
-		Response response = RequestManager.put(Request.getPathParam(), requestBody.toString());
+		JsonUtil jsonUtil = new JsonUtil("update-protocol");
+		if(condicao.equals("chave-forte-invalida")) {
+			requestBody = jsonUtil.getJsonWitKey("valido");
+			response = RequestManager.put("/lote/protocolos/","2131234234211", requestBody.toString());
+		} else {
+			requestBody = jsonUtil.getJsonWitKey(condicao);
+			response = RequestManager.put("/lote/protocolos/", Request.getPathParam(), requestBody.toString());
+
+		}
+
 		ResponseAPI.setResponse(response);
+
 
 	}
 

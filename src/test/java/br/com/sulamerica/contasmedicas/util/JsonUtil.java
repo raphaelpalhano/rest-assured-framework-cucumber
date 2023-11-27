@@ -115,7 +115,6 @@ public class JsonUtil {
 
     public JSONObject getJsonWitKey(String key) {
         JSONObject json = jsonObjct;
-
         return (JSONObject) json.get(key);
     }
 
