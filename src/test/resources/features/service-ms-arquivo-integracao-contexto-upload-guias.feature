@@ -1,5 +1,4 @@
 # language: pt
-@env_homolog
 Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
 
     Serviço ms-arquivo-integracao upload de arquivos
@@ -17,7 +16,7 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
         Entao retonar o codigo protocolo registrado
 
 
-    @AUTOMATED @env_ms-integracao @path_url:prestadores 
+    @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de guias com codigo do prestador invalido
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client side faz upload do arquivo tipo "guias-sadt-invalido" com os dados
@@ -28,7 +27,7 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
         Entao retornar o codigo status do protocolo "BLOQUEADO"
 
 
-    @AUTOMATED @env_ms-integracao @path_url:prestadores
+    @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de guias com codigo beneficiario e data dataRegistroTransacao invalidos
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client side faz upload do arquivo tipo "guias-sadt-invalido" com os dados
@@ -40,7 +39,7 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
 
 
 
-    @AUTOMATED @env_ms-integracao @path_url:prestadores
+    @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de guias com arquivo nao zipado
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client faz upload do arquivo de um arquivo "nao-zipado" do tipo "guias-consulta-valido"
@@ -49,7 +48,7 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
 
     # Guias Consultas
 
-    @AUTOMATED @env_ms-integracao @path_url:prestadores
+    @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de guias consulta com tiss versao 3.0
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client side faz upload do arquivo tipo "guias-consulta-valido" com os dados
@@ -60,7 +59,7 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
 
 
   
-    @AUTOMATED @env_ms-integracao @path_url:prestadores
+    @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de de guias com formato do xml fora do padrao tiss
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client side faz upload do arquivo tipo "guias-consulta-formato-invalido" com os dados

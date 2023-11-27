@@ -1,8 +1,5 @@
 # Framework Rest-Assured 
 
-
-
-
 ## Jira Config
 
 Find jira projectid
@@ -13,7 +10,7 @@ https://{domain}.atlassian.net/rest/api/2/project
 
 **Run Integration Test**
 
- mvn clean verify -Dtest=RunTestsIT
+ mvn clean verify -Dtest=RunTestsIT -DENV=develop
  
 
 ## Test steps

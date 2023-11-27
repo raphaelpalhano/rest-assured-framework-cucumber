@@ -23,7 +23,7 @@ public class AssertionsProtocolo {
 
 	@Entao("retornar o codigo status do protocolo {string}")
 	public void validarOcodigoProtocolo(String codigoStatusExpected) throws Exception {
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Response res = RequestManager.getWithPathParam(String.format("%s%s/guias/arquivos/simplificado/", Request.getPath(), Request.getParam().get("codigo-prestador")), Request.getParam().get("codigo-protocolo"));
 		String codigoStatus = res.getBody().jsonPath().get("codigo-status").toString();
 		assertEquals(codigoStatusExpected, codigoStatus);

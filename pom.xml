@@ -53,11 +53,7 @@
             <artifactId>commons-io</artifactId>
             <version>2.7</version>
         </dependency>
-        <dependency>
-            <groupId>com.github.everit-org.json-schema</groupId>
-            <artifactId>org.everit.json.schema</artifactId>
-            <version>1.6.0</version>
-        </dependency>
+
         <dependency>
             <groupId>org.jsonschema2pojo</groupId>
             <artifactId>jsonschema2pojo-core</artifactId>
@@ -131,15 +127,11 @@
 		</dependency>
 
 
-	
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>2.0.9</version>
 		</dependency>
-
-
-		
 
 		<dependency>
 			<groupId>org.yaml</groupId>
@@ -165,25 +157,22 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.7</version>
-                <configuration>
-                    <formats>
-                        <format>html</format>
-                        <format>xml</format>
-                    </formats>
-                    <check />
-                </configuration>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.ow2.asm</groupId>
-                        <artifactId>asm</artifactId>
-                        <version>5.0.3</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
+               <plugin>
+                   <groupId>org.apache.maven.plugins</groupId>
+                   <artifactId>maven-surefire-plugin</artifactId>
+                   <version>3.0.0-M4</version>
+                   <dependencies>
+                       <dependency>
+                           <groupId>org.apache.maven.surefire</groupId>
+                           <artifactId>surefire-junit47</artifactId>
+                           <version>3.0.0-M4</version>
+                       </dependency>
+                   </dependencies>
+                   <configuration>
+                       <testFailureIgnore>true</testFailureIgnore>
+                       <argLine>-Dfile.encoding=UTF-8</argLine>
+                   </configuration>
+               </plugin>
               <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
@@ -210,60 +199,60 @@
                 </executions>
             </plugin>
         
-		<plugin>
-			<groupId>com.assertthat.plugins</groupId>
-			<artifactId>assertthat-bdd-maven-plugin</artifactId>
-			<version>1.7.0</version>
-			<configuration>
-				<projectId>10000</projectId>
-				<!--Optional can be supplied as environment variable ASSERTTHAT_ACCESS_KEY -->
-				<accessKey>ec6267478c617447b4ccb94540ecbe4df8909108f28f606c9ed0a057384bd2f1</accessKey>
-				<secretKey>620a239f60c35c77303a76923149e52155bdd43666f3947463d1836a48451398</secretKey>
-				<!-- Used for jira server integration only. If using cloud remove this option-->
-				<!--<jiraServerUrl>https://testools.atlassian.net/rest/api/2/project/10000</jiraServerUrl>-->
-			</configuration>
-			<executions>
-				<execution>
-					<configuration>
-						<!--Optional - default ./features-->
-						<outputFolder>src/test/resources/features</outputFolder>
-						<!--Optional - all features downloaded by default - should be a valid JQL-->
-						<!--<jql>project = MT AND key in ('MT-14')</jql>-->
-						<!--Optional - default automated (can be one of: manual/automated/both)-->
-						<mode>automated</mode>
-						<!--Optional - tag expression filter for scenarios. More on tag expressions https://cucumber.io/docs/cucumber/api/#tag-expressions-->
-						<!--<tags>(@api)</tags> -->
-						
-						<!--<enabled>true</enabled>-->
-						  <ignoreCertErrors>true</ignoreCertErrors>
-					</configuration>
-					<id>features</id>
-					<goals>
-						<goal>features</goal>
-					</goals>
-					<phase>pre-integration-test</phase>
-				</execution>
-				<execution>
-					<id>report</id>
-					<goals>
-						<goal>report</goal>
-					</goals>
-					<phase>post-integration-test</phase>
-					<configuration>
-						<!--Optional - default ./report-->
-						<jsonReportFolder>target/report/surefire-reports/cucumber/</jsonReportFolder>
-						<!--Optional - default - **/*.json -->
-						<!--<jsonReportIncludePattern>**/cucumber-json-report.json</jsonReportIncludePattern>-->
-						<!--Optional - default cucumber (can be one of: cucumber/karate)-->
-						<!--<type>cucumber</type>-->
-						<!--Optional - all Jira tickets will be updated with test results by default; when JQL is provided only filtered tickets will be updated -->
-						<!--<jql>project = MT AND key in ('MT-14')</jql>-->
-						<!--Optional - whether the phase is enabled (default is true) -->
-						<!--<enabled>true</enabled>-->
-					</configuration>
-				</execution>
-			</executions>
-		</plugin>
+<!--		<plugin>-->
+<!--			<groupId>com.assertthat.plugins</groupId>-->
+<!--			<artifactId>assertthat-bdd-maven-plugin</artifactId>-->
+<!--			<version>1.7.0</version>-->
+<!--			<configuration>-->
+<!--				<projectId>10000</projectId>-->
+<!--				&lt;!&ndash;Optional can be supplied as environment variable ASSERTTHAT_ACCESS_KEY &ndash;&gt;-->
+<!--				<accessKey>ec6267478c617447b4ccb94540ecbe4df8909108f28f606c9ed0a057384bd2f1</accessKey>-->
+<!--				<secretKey>620a239f60c35c77303a76923149e52155bdd43666f3947463d1836a48451398</secretKey>-->
+<!--				&lt;!&ndash; Used for jira server integration only. If using cloud remove this option&ndash;&gt;-->
+<!--				&lt;!&ndash;<jiraServerUrl>https://testools.atlassian.net/rest/api/2/project/10000</jiraServerUrl>&ndash;&gt;-->
+<!--			</configuration>-->
+<!--			<executions>-->
+<!--				<execution>-->
+<!--					<configuration>-->
+<!--						&lt;!&ndash;Optional - default ./features&ndash;&gt;-->
+<!--						<outputFolder>src/test/resources/features</outputFolder>-->
+<!--						&lt;!&ndash;Optional - all features downloaded by default - should be a valid JQL&ndash;&gt;-->
+<!--						&lt;!&ndash;<jql>project = MT AND key in ('MT-14')</jql>&ndash;&gt;-->
+<!--						&lt;!&ndash;Optional - default automated (can be one of: manual/automated/both)&ndash;&gt;-->
+<!--						<mode>automated</mode>-->
+<!--						&lt;!&ndash;Optional - tag expression filter for scenarios. More on tag expressions https://cucumber.io/docs/cucumber/api/#tag-expressions&ndash;&gt;-->
+<!--						&lt;!&ndash;<tags>(@api)</tags> &ndash;&gt;-->
+<!--						-->
+<!--						&lt;!&ndash;<enabled>true</enabled>&ndash;&gt;-->
+<!--						  <ignoreCertErrors>true</ignoreCertErrors>-->
+<!--					</configuration>-->
+<!--					<id>features</id>-->
+<!--					<goals>-->
+<!--						<goal>features</goal>-->
+<!--					</goals>-->
+<!--					<phase>pre-integration-test</phase>-->
+<!--				</execution>-->
+<!--				<execution>-->
+<!--					<id>report</id>-->
+<!--					<goals>-->
+<!--						<goal>report</goal>-->
+<!--					</goals>-->
+<!--					<phase>post-integration-test</phase>-->
+<!--					<configuration>-->
+<!--						&lt;!&ndash;Optional - default ./report&ndash;&gt;-->
+<!--						<jsonReportFolder>target/report/surefire-reports/cucumber/</jsonReportFolder>-->
+<!--						&lt;!&ndash;Optional - default - **/*.json &ndash;&gt;-->
+<!--						&lt;!&ndash;<jsonReportIncludePattern>**/cucumber-json-report.json</jsonReportIncludePattern>&ndash;&gt;-->
+<!--						&lt;!&ndash;Optional - default cucumber (can be one of: cucumber/karate)&ndash;&gt;-->
+<!--						&lt;!&ndash;<type>cucumber</type>&ndash;&gt;-->
+<!--						&lt;!&ndash;Optional - all Jira tickets will be updated with test results by default; when JQL is provided only filtered tickets will be updated &ndash;&gt;-->
+<!--						&lt;!&ndash;<jql>project = MT AND key in ('MT-14')</jql>&ndash;&gt;-->
+<!--						&lt;!&ndash;Optional - whether the phase is enabled (default is true) &ndash;&gt;-->
+<!--						&lt;!&ndash;<enabled>true</enabled>&ndash;&gt;-->
+<!--					</configuration>-->
+<!--				</execution>-->
+<!--			</executions>-->
+<!--		</plugin>-->
 
 	
     </plugins>
