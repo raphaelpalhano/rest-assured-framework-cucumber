@@ -9,7 +9,6 @@ public class RandomData {
 	public static Long uniquePositiveNumber() {
 		String generateUUIDNo = String.format("%010d",new BigInteger(UUID.randomUUID().toString().replace("-",""),16));
 		// To decide length of unique positive long number generateUUIDNo.length() - uniqueNoSize is being used
-		long uniqueNumber = Long.parseLong(generateUUIDNo.substring( generateUUIDNo.length() - 10));
-		return uniqueNumber;
+        return Long.parseLong(generateUUIDNo.substring( generateUUIDNo.length() - 10));
 	}
 }

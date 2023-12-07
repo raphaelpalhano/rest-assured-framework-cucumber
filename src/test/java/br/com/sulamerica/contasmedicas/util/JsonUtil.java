@@ -2,10 +2,10 @@ package br.com.sulamerica.contasmedicas.util;
 
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.groovy.parser.antlr4.GroovyParser.ClassNameContext;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -56,8 +56,9 @@ import java.util.logging.Logger;
  */
 
 public class JsonUtil {
-    JSONParser leitor;
     JSONObject jsonObjct;
+    JSONTokener tokener;
+
     JSONArray jsonArray;
     String[] jsonBody;
     String path;
@@ -66,29 +67,38 @@ public class JsonUtil {
 
 
     public JsonUtil(){
-        leitor = new JSONParser();
-        jsonArray = new JSONArray();
     }
 
     public JsonUtil(String arquivo) {
 		try {
 			File payload = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH + File.separator + "json", arquivo);
-			leitor = new JSONParser();
-			jsonArray = new JSONArray();
 			String jsonBodyRead = getJSONFile(payload.toString());
 			jsonBody = jsonBodyRead.split("");
 			if (!jsonBody[0].equals("["))
-				jsonObjct = (JSONObject) leitor.parse(new FileReader(payload));
+                tokener = new JSONTokener(new FileReader(payload));
+                jsonObjct = new JSONObject(tokener);
 			if (jsonBody[0].equals("["))
-				jsonArray = (JSONArray) leitor.parse(new FileReader(payload));
+				jsonArray = new JSONArray(new FileReader(payload));
 		} catch (Exception e) {
 			LOGGER.log(Level.SEVERE, "nao foi possivel carregar o arquivo JSON", e);
 		}
 	}
 
+    public JSONObject parseJson(String valueJson) {
+        tokener = new JSONTokener(valueJson);
+        jsonObjct = new JSONObject(tokener);
+        return jsonObjct;
+    }
+
+    public JSONArray parseJsonArray(String valueJson) {
+        tokener = new JSONTokener(valueJson);
+        jsonArray = new JSONArray(tokener);
+        return jsonArray;
+    }
+
     public JSONObject JsonResponse(String responseBody) throws ParseException {
-    	jsonObjct = (JSONObject) this.leitor.parse(responseBody);
-		return jsonObjct;
+
+        return parseJson(responseBody);
     }
     
     public JSONObject getJSONBodyObject(){
@@ -114,15 +124,14 @@ public class JsonUtil {
     }
 
     public JSONObject getJsonWitKey(String key) {
-        JSONObject json = jsonObjct;
-        return (JSONObject) json.get(key);
+        return (JSONObject) jsonObjct.get(key);
     }
 
     public Object decodification(String code) throws ParseException {
         String[] parts = code.split("\\.");
         Decoder decoder = Base64.getDecoder();
         String payload = new String(decoder.decode(parts[1]));
-        JSONObject valor = (JSONObject) leitor.parse(payload);
+        JSONObject valor = new JSONObject(payload);
         JSONObject valorKeyCloak = (JSONObject) valor.get("keycloak");
         return valorKeyCloak.get("access_token");
     }
@@ -131,7 +140,9 @@ public class JsonUtil {
         return jsonObjct.get(key);
     }
 
-
+    public JSONObject getKeyJsonObject(String key){
+        return (JSONObject) jsonObjct.get(key);
+    }
 
 
     public Object getKeyArray(Integer index, String key){
@@ -187,42 +198,27 @@ public class JsonUtil {
 
    
 	public String getBodyString(String JsonBody, String key) {
-		try {
-			JSONObject objectJSON = (JSONObject) this.leitor.parse(JsonBody);
-            return String.valueOf(objectJSON.get(key));
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		return null;
-		
+        JSONObject objectJSON = new JSONObject(JsonBody);
+        return String.valueOf(objectJSON.get(key));
+
 	}
 
 	public String getBodyStringIntoList(String JsonBody, String key, Integer indexObject, String keySecond) {
-		try {
-			JSONObject objectJSON = (JSONObject) this.leitor.parse(JsonBody);
-			JSONArray listArray = (JSONArray) objectJSON.get(key);
-			JSONObject objectInto = (JSONObject) listArray.get(indexObject);
-            return String.valueOf(objectInto.get(keySecond));
-            
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		return null;
-		
+        JSONObject objectJSON = new JSONObject(JsonBody);
+        JSONArray listArray = (JSONArray) objectJSON.get(key);
+        JSONObject objectInto = (JSONObject) listArray.get(indexObject);
+        return String.valueOf(objectInto.get(keySecond));
+
+
 	}
 	
     public String getJSONBodyString() {
-		return jsonObjct.toJSONString();
+		return jsonObjct.toString();
 	}
 	
 	public JSONArray getReponseListJSON(String jsonBody){
-		try {
-			JSONArray jsonArray = (JSONArray) this.leitor.parse(jsonBody);
-			return jsonArray;
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		return null;
+        return parseJsonArray(jsonBody);
+
 	}
 
 	

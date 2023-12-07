@@ -4,8 +4,6 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
     Serviço ms-arquivo-integracao upload de arquivos
 
 
-    # Guias sadt
-
     @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de guias validas
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
@@ -14,6 +12,7 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
         ans:codigoPrestadorNaOperadora=100000010577
         """
         Entao retonar o codigo protocolo registrado
+
 
 
     @AUTOMATED @service_ms-integracao @path_url:prestadores
@@ -38,15 +37,12 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
         Entao retornar o codigo status do protocolo "BLOQUEADO"
 
 
-
     @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de guias com arquivo nao zipado
         Dado que o client side gera o protocolo "valido" pelo endpoint "/guias/arquivos/url-assinada"
         Quando o client faz upload do arquivo de um arquivo "nao-zipado" do tipo "guias-consulta-valido"
         Então retornar o codigo status do protocolo "BLOQUEADO"
 
-
-    # Guias Consultas
 
     @AUTOMATED @service_ms-integracao @path_url:prestadores
     Cenário: Upload de guias consulta com tiss versao 3.0
@@ -69,5 +65,3 @@ Funcionalidade: service-ms-integracao-guias-contexto-gerar-protocolo
         """
         Entao retonar o codigo protocolo registrado
         E retornar o codigo status do protocolo "BLOQUEADO"
-
-

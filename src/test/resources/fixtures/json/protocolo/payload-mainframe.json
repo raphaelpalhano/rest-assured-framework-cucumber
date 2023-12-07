@@ -1,0 +1,92 @@
+{
+  "processado-sucesso": {
+    "status": "PROCESSADO_MAINFRAME_SUCESSO",
+    "responsavel": "MAINFRAME - MEDH005",
+    "descricao": "Lote Processado com sucesso",
+    "guias": [
+      {
+        "chaveDaGuia": 0,
+        "status": "PROCESSADO_COM_SUCESSO",
+        "responsavel": "MAINFRAME - MEDH005",
+        "descricao": "Conta processada com sucesso"
+      }
+    ]
+  },
+  "processando": {
+    "status": "PROCESSANDO_MAINFRAME",
+    "responsavel": "MAINFRAME - MEDH005",
+    "descricao": "Processado mainframe",
+    "guias": [
+      {
+        "chaveDaGuia": 0,
+        "status": "PROCESSADO_COM_ERRO",
+        "responsavel": "mainframe",
+        "descricao": "Conta duplicada"
+      }
+    ]
+  },
+  "processado-erro-total": {
+    "status": "PROCESSADO_MAINFRAME_ERRO_TOTAL",
+    "responsavel": "MAINFRAME - MEDH005",
+    "descricao": "Processado mainframe",
+    "guias": [
+      {
+        "chaveDaGuia": 0,
+        "status": "PROCESSADO_COM_ERRO",
+        "responsavel": "mainframe",
+        "descricao": "Conta duplicada"
+      }
+    ]
+  },
+  "processado-erro-parcial": {
+    "status": "PROCESSADO_MAINFRAME_ERRO_PARCIAL",
+    "responsavel": "MAINFRAME - MEDH005",
+    "descricao": "Lote Aceito Parcial",
+    "guias": [
+      {
+        "chaveDaGuia": 0,
+        "status": "PROCESSADO_COM_ERRO",
+        "responsavel": "mainframe",
+        "descricao": "Conta duplicada"
+      }
+    ]
+  },
+  "processado-sem-status-lote": {
+    "responsavel": "MAINFRAME - MEDH005",
+    "descricao": "Lote Aceito Parcial",
+    "guias": [
+      {
+        "chaveDaGuia": 0,
+        "status": "PROCESSADO_COM_ERRO",
+        "responsavel": "mainframe",
+        "descricao": "Conta duplicada"
+      }
+    ]
+  },
+  "processado-sem-chave-guia": {
+    "status": "PROCESSADO_MAINFRAME_ERRO_PARCIAL",
+    "responsavel": "MAINFRAME - MEDH005",
+    "descricao": "Lote Aceito Parcial",
+    "guias": [
+      {
+        "status": "PROCESSADO_COM_ERRO",
+        "responsavel": "mainframe",
+        "descricao": "Conta duplicada"
+      }
+    ]
+  },
+  "processado-fora-do-enum": {
+    "status": "PROCESSANDO_MAINFRAMEss",
+    "responsavel": "MAINFRAME - MEDH005",
+    "descricao": "Processado mainframe",
+    "guias": [
+      {
+        "chaveDaGuia": 0,
+        "status": "PROCESSADO_COM_ERROss",
+        "responsavel": "mainframe",
+        "descricao": "Conta duplicada"
+      }
+    ]
+  }
+}
+

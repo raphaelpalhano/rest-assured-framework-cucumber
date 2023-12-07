@@ -24,10 +24,13 @@ public class AssertionsGlobal {
 
 	@E("respeitar o schema {string}")
 	public void validaSchema(String nomeSchema) throws Exception {
-		String[] fileAndFolder = nomeSchema.split(",");
-		JsonSchemaGenerator.generateSchema(fileAndFolder[0], fileAndFolder[1], ResponseAPI.getResponse().getBody().asString());
-		File schema = FileManager.getRecursiveFiles(SCHEMA_PATH, fileAndFolder[1]);
-		ResponseAPI.getResponse().then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(schema));
+		if(!nomeSchema.isEmpty()) {
+			String[] fileAndFolder = nomeSchema.split(",");
+			JsonSchemaGenerator.generateSchema(fileAndFolder[0], fileAndFolder[1], ResponseAPI.getResponse().getBody().asString());
+			File schema = FileManager.getRecursiveFiles(SCHEMA_PATH, fileAndFolder[1]);
+			ResponseAPI.getResponse().then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(schema));
+
+		}
 
 	}
 	

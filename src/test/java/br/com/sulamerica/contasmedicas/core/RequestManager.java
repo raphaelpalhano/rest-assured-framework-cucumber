@@ -18,8 +18,8 @@ import org.apache.http.client.methods.HttpPut;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.FileEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import br.com.sulamerica.contasmedicas.constants.PathConstants;
@@ -129,6 +129,21 @@ public class RequestManager {
 
 	}
 
+	public static Response patch(String path, String body) throws Exception {
+
+		Map<String, String> headers = EnvObject.getHeaders();
+		headers.putAll(EnvObject.getHeaders());
+		headers.putAll(EnvObject.getToken());
+
+		Response response = given().contentType(EnvObject.getContent_type()).with().body(body).headers(headers)
+				.when().patch(path);
+		response.then().log().all();
+
+		return response;
+
+
+	}
+
 	public static Response put(Map<String, String> pathParam, String body) throws Exception {
 
 		Map<String, String> headers = EnvObject.getHeaders();
@@ -198,10 +213,10 @@ public class RequestManager {
 		Iterator<?> iterator = listJson.iterator();
 		while(iterator.hasNext()) {
 			JSONObject object = (JSONObject) iterator.next();
-			if(object.containsValue(valueSpecific))
+			if(object.toString().contains(valueSpecific))
 				validator = true;
 				break;
-			
+
 		}
 		return validator;
 		
@@ -266,7 +281,7 @@ public class RequestManager {
 	
 	
 	public static Response delete(String id) {
-		String PATHURL = LinkedHashMap.class.cast(EnvObject.getPath_url().get(ScenarioObject.getPath_url())).get("path_url").toString();	
+		String PATHURL = LinkedHashMap.class.cast(EnvObject.getPath_url().get(ScenarioObject.getPath_url())).get("path_url").toString();
 		return given().with().when().delete(EnvObject.getBase_url() + PATHURL);
 	}
 	
@@ -301,7 +316,7 @@ public class RequestManager {
 			}
 			String url = EnvObject.getBase_url() + EnvObject.getAuthenticate_url();
 			JSONObject jsonStr = new JSONObject(LinkedHashMap.class.cast(authenticationMap.get("Body")));
-			JSONObject jsonPayloadObject = (JSONObject) new JSONParser().parse(jsonStr.toJSONString());
+			JSONObject jsonPayloadObject = (JSONObject) new JSONParser().parse(jsonStr.toString());
 			Response response = post(url, jsonPayloadObject);
 			String responseBody = response.getBody().asString();
 			if (response.getStatusCode() != 404) {

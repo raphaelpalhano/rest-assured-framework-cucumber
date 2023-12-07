@@ -18,12 +18,12 @@
     </ans:cabecalho>
     <ans:prestadorParaOperadora>
         <ans:loteGuias>
-            <ans:numeroLote>3578618150</ans:numeroLote>
+            <ans:numeroLote>423134264</ans:numeroLote>
             <ans:guiasTISS>
                 <ans:guiaSP-SADT>
                     <ans:cabecalhoGuia>
                         <ans:registroANS>006246</ans:registroANS>
-                        <ans:numeroGuiaPrestador>464719433</ans:numeroGuiaPrestador>
+                        <ans:numeroGuiaPrestador>475921634</ans:numeroGuiaPrestador>
                         <ans:guiaPrincipal>3018695</ans:guiaPrincipal>
                     </ans:cabecalhoGuia>
                     <ans:dadosAutorizacao>
