@@ -1,0 +1,14 @@
+[
+      {
+        "codigo-status": "AGUARDANDO_ENVIO",
+        "codigo-status-mainframe": null,
+        "status-protocolo-ans": null,
+        "ativo": false
+      },
+      {
+        "codigo-status": "EM_PROCESSAMENTO",
+        "codigo-status-mainframe": null,
+        "status-protocolo-ans": "EM_ANALISE",
+        "ativo": true
+      }
+]

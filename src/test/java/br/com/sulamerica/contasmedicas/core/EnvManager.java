@@ -17,11 +17,11 @@ public class EnvManager {
 		LinkedHashMap<?, ?> envMap = ReadEnvs.getEnv();
 		LinkedHashMap<?, ?> serviceMap = ReadEnvs.getServices(envMap);
 
-		EnvObject.setBase_url(getEnv(baseUrl, serviceMap).toString());
-		EnvObject.setPath_urls(getEnv(pathUrls, serviceMap) == null ? new LinkedHashMap<String, String>() : LinkedHashMap.class.cast(getEnv(pathUrls, serviceMap)));
-		EnvObject.setAuthenticate_url(
+		EnvObject.setBaseUrl(getEnv(baseUrl, serviceMap).toString());
+		EnvObject.setPathUrls(getEnv(pathUrls, serviceMap) == null ? new LinkedHashMap<String, String>() : LinkedHashMap.class.cast(getEnv(pathUrls, serviceMap)));
+		EnvObject.setAuthenticateUrl(
 				getEnv(authenticateUrl, serviceMap) == null ? "" : getEnv(authenticateUrl, serviceMap).toString());
-		EnvObject.setContent_type(getEnv(contentType, serviceMap).toString());
+		EnvObject.setContentType(getEnv(contentType, serviceMap).toString());
 		EnvObject.setHeaders(getEnv(headers, serviceMap) == null ? new LinkedHashMap<String, String>() : LinkedHashMap.class.cast(getEnv(headers, serviceMap)));
 		EnvObject.setAuthetication(LinkedHashMap.class.cast(getEnv(authentication, serviceMap)));
 	}

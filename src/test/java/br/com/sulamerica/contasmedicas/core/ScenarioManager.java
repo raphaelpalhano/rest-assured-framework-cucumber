@@ -14,7 +14,7 @@ import io.cucumber.java.Scenario;
 
 public class ScenarioManager {
 	public static void loadSenarioName(Scenario cucumebrScenario) {
-		ScenarioObject.setScenario_name(cucumebrScenario.getName());
+		ScenarioObject.setScenarioName(cucumebrScenario.getName());
 	}
 
 	public static void loadEnvTags() throws Exception {
@@ -36,12 +36,9 @@ public class ScenarioManager {
 			for (String scenarioName : scenarioNameList) {
 				tag = StringManager.substringByRegex(scenarioName.split("\r?\n")[0].replaceAll("@", ""), "[Ss]ervice\\S*")
 						.replaceAll("[Ss]ervice.?", "");
-				path_url =  StringManager.substringByRegex(scenarioName.split("\r?\n")[0].replaceAll("@", ""), "[pP]ath.[Uu]rl.\\S*")
-						.replaceAll("[pP]ath.[Uu]rl.", "");
-				String scenario = scenarioName.split("\r?\n")[1].split("\\s*\\:\\s*")[1];
-				if (scenario.equals(ScenarioObject.getScenario_name())) {
+						String scenario = scenarioName.split("\r?\n")[1].split("\\s*\\:\\s*")[1];
+				if (scenario.equals(ScenarioObject.getScenarioName())) {
 					ScenarioObject.setServiceName(tag);
-					ScenarioObject.setPath_url(path_url);
 					scenarioFinded = true;
 					break;
 				} else {
@@ -50,6 +47,6 @@ public class ScenarioManager {
 			}
 		}
 		if (!scenarioFinded)
-			throw new Exception("Scenario não Encontrado: " + ScenarioObject.getScenario_name());
+			throw new Exception("Scenario não Encontrado: " + ScenarioObject.getScenarioName());
 	}
 }

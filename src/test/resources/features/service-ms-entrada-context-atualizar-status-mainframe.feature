@@ -4,8 +4,12 @@ Funcionalidade: service-ms-entrada-context-atualizar-status-mainframe
 
     endpoint para atualizar os status das criticas do processamento do mainframe
 
+    Contexto: Que eu tenho o servico ms-arquivo-integracao
+        Dado que configuro o microsservico "ms-entradas-guias"
 
-    @service_ms-entradas-guias @path_url:protocolo @AUTOMATED @VSCM-3029
+
+
+    @AUTOMATED @VSCM-3029
     Esquema do Cenário: Atualizando os status do returno do mainframe
         Dado que o client side gera o protocolo "valido"
         Quando que o client side atualiza o protocolo "valido"
@@ -19,11 +23,11 @@ Funcionalidade: service-ms-entrada-context-atualizar-status-mainframe
         |processado-erro-total		| 204		|
         |processado-erro-parcial	| 204		|
 
-    @service_ms-entradas-guias @path_url:status_mainframe @AUTOMATED @VSCM-3029
+    @AUTOMATED @VSCM-3029
     Esquema do Cenário: Validacoes do payload do endpoint contas-medicas
         Dado que o client side faz request com payload com erro do mainframe "<payload-mainframe>"
         Então deve retornar o statuscode <status-code>
-        
+
         Exemplos:
         |payload-mainframe			|status-code|
         |processado-sem-status-lote	| 400		|

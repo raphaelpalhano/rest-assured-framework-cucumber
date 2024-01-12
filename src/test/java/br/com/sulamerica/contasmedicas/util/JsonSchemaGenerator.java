@@ -1,10 +1,10 @@
 package br.com.sulamerica.contasmedicas.util;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
+
+
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeType;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.sun.codemodel.JCodeModel;
 import org.apache.commons.io.FileUtils;
 import org.everit.json.schema.Schema;
@@ -13,62 +13,37 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.jsonschema2pojo.SchemaMapper;
 
-import javax.xml.validation.SchemaFactory;
-
-import static br.com.sulamerica.contasmedicas.constants.PathConstants.SCHEMA_PATH;
-
 import java.io.File;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 import java.util.logging.Logger;
 
 public final class JsonSchemaGenerator {
 
     private static final Logger LOGGER = Logger.getLogger(JsonSchemaGenerator.class.getName());
     private static ObjectMapper objectMapper = new ObjectMapper();
+    private static Map<String, JsonNodeType> map = new HashMap<>();
 
-    public static String outputAsString(String json) throws Exception {
-        return cleanup(outputAsString(json, null));
+    public static String outputAsString(String title, String description,
+                                        String json) throws IOException {
+        return cleanup(outputAsString(title, description, json, null));
     }
-    
-  
-    
-    public static void outputAsFile(String json, String filename) throws Exception {
+
+    public static void outputAsFile(String title, String description,
+                                    String json, String filename) throws IOException {
         FileUtils.writeStringToFile(
                 new File(filename),
-                cleanup(outputAsString( json)),
+                cleanup(outputAsString(title, description, json)),
                 "utf8");
     }
 
-    
-    public static void generateSchema(String folder, String fileName, String jsonObject) throws Exception {
 
-        Path schemaPath = Paths.get(SCHEMA_PATH, folder);
-        Path pathFile = Path.of(schemaPath + File.separator + fileName + ".json");
-        if (Files.notExists(pathFile)) {
-            System.out.println("Arquivo não encontrado, criando o arquivo...");
-            String schemaJson = outputAsString(jsonObject);
-
-            try {
-                Files.createDirectories(schemaPath);
-                Files.writeString(pathFile, schemaJson);
-
-
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        } else {
-            System.out.println("O arquivo já existe!");
-        }
-    }
-    
-    public static void outputAsPOJO(String json, String packageName,
-                                    String outputDirectory) throws Exception {
-        String schema = JsonSchemaGenerator.outputAsString(json);
+    public static void outputAsPOJO(String title, String description,
+                                    String json, String packageName,
+                                    String outputDirectory) throws IOException {
+        String schema = JsonSchemaGenerator.outputAsString(title, title, json);
         LOGGER.info("Generating POJO(s) ...");
 
         File fDirectory = new File(outputDirectory);
@@ -76,17 +51,21 @@ public final class JsonSchemaGenerator {
 
         JCodeModel codeModel = new JCodeModel();
         SchemaMapper mapper = new SchemaMapper();
-        mapper.generate(codeModel, "", packageName, schema);
+        mapper.generate(codeModel, title, packageName, schema);
         codeModel.build(fDirectory);
         LOGGER.info("DONE.");
     }
 
-    private static String outputAsString(String json, JsonNodeType type) throws IOException {
+    private static String outputAsString(String title, String description,
+                                         String json, JsonNodeType type) throws IOException {
         JsonNode jsonNode = objectMapper.readTree(json);
         StringBuilder output = new StringBuilder();
         output.append("{");
 
-        if (type == null) output.append("\"type\": \"object\", \"properties\": {");
+        if (type == null) output.append(
+                "\"title\": \"" +
+                        title + "\", \"description\": \"" +
+                        description + "\", \"type\": \"object\", \"properties\": {");
 
         for (Iterator<String> iterator = jsonNode.fieldNames(); iterator.hasNext();) {
             String fieldName = iterator.next();
@@ -107,18 +86,30 @@ public final class JsonSchemaGenerator {
 
     private static String convertNodeToStringSchemaNode(
             JsonNode jsonNode, JsonNodeType nodeType, String key) throws IOException {
+        if(nodeType == JsonNodeType.NULL) {
+            return "\"" + key + "\": {},";
+
+        }
         StringBuilder result = new StringBuilder("\"" + key + "\": { \"type\": \"");
 
         LOGGER.info(key + " node type " + nodeType + " with value " + jsonNode.get(key));
         JsonNode node = null;
         switch (nodeType) {
             case ARRAY :
-                node = jsonNode.get(key).get(0);
+                if(!jsonNode.get(key).isEmpty()) {
+                    node = jsonNode.get(key).get(0);
+                    LOGGER.info(key + " is an array with value of " + node.toString());
+                    result.append("array\", \"items\": { \"properties\":");
+                    result.append(outputAsString(null, null, node.toString(), JsonNodeType.ARRAY));
+                    result.append("}},");
+                    break;
+                }
+                node = jsonNode.get(key);
                 LOGGER.info(key + " is an array with value of " + node.toString());
-                result.append("array\", \"items\": { \"properties\":");
-                result.append(outputAsString(node.toString(), JsonNodeType.ARRAY));
+                result.append("array\", \"items\": {}");
                 result.append("}},");
                 break;
+
             case BOOLEAN:
                 result.append("boolean\" },");
                 break;
@@ -128,23 +119,21 @@ public final class JsonSchemaGenerator {
             case OBJECT:
                 node = jsonNode.get(key);
                 result.append("object\", \"properties\": ");
-                result.append(outputAsString( node.toString(), JsonNodeType.OBJECT));
+                result.append(outputAsString(null, null, node.toString(), JsonNodeType.OBJECT));
                 result.append("},");
                 break;
             case STRING:
                 result.append("string\" },");
                 break;
-		default:
-			break;
+
         }
 
         return result.toString();
     }
 
-    private static String cleanup(String dirty) throws Exception {
-        JSONObject rawSchema = new JSONObject(new JSONTokener(dirty));
+    private static String cleanup(String dirty) {
+        //JSONObject rawSchema = new JSONObject(new JSONTokener(dirty));
         //Schema schema = SchemaLoader.load(rawSchema);
-        return rawSchema.toString();
-
+        return dirty;
     }
 }

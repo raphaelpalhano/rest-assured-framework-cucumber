@@ -6,7 +6,6 @@ import org.apache.groovy.parser.antlr4.GroovyParser.ClassNameContext;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import br.com.sulamerica.contasmedicas.constants.PathConstants;
@@ -74,11 +73,15 @@ public class JsonUtil {
 			File payload = FileManager.getRecursiveFiles(PathConstants.FIXTURES_PATH + File.separator + "json", arquivo);
 			String jsonBodyRead = getJSONFile(payload.toString());
 			jsonBody = jsonBodyRead.split("");
-			if (!jsonBody[0].equals("["))
+			if (!jsonBody[0].equals("[")) {
                 tokener = new JSONTokener(new FileReader(payload));
                 jsonObjct = new JSONObject(tokener);
-			if (jsonBody[0].equals("["))
-				jsonArray = new JSONArray(new FileReader(payload));
+            }
+			if (jsonBody[0].equals("[")) {
+                tokener = new JSONTokener(new FileReader(payload));
+                jsonArray = new JSONArray(tokener);
+
+            }
 		} catch (Exception e) {
 			LOGGER.log(Level.SEVERE, "nao foi possivel carregar o arquivo JSON", e);
 		}
@@ -105,10 +108,17 @@ public class JsonUtil {
         return jsonObjct;
     }
 
+    public JSONArray getArrayObject(){
+        return jsonArray;
+    }
+
+
     public JSONObject getJSONBodyInArray(int index){
         return (JSONObject) jsonArray.get(index);
 
     }
+
+
 
     public JSONObject getJsonWithDot(String keys) {
         JSONObject json = jsonObjct;

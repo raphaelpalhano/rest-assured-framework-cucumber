@@ -4,21 +4,21 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class EnvObject {
-	private static String base_url;
-	private static LinkedHashMap<String, String> path_urls;
-	private static String authenticate_url;
+	private static String baseUrl;
+	private static LinkedHashMap<String, String> pathUrls;
+	private static String authenticateUrl;
 	private static String content_type;
 	private static Map<String, String> headers;
 	private static Map<String, String> token;
 	private static Map<String, String> header;
 
 
-	public static String getAuthenticate_url() {
-		return authenticate_url;
+	public static String getAuthenticateUrl() {
+		return authenticateUrl;
 	}
 
-	public static void setAuthenticate_url(String authenticate_url) {
-		EnvObject.authenticate_url = authenticate_url;
+	public static void setAuthenticateUrl(String authenticateUrl) {
+		EnvObject.authenticateUrl = authenticateUrl;
 	}
 
 	public static LinkedHashMap<?, ?> getAuthetication() {
@@ -31,27 +31,27 @@ public class EnvObject {
 
 	private static LinkedHashMap<?, ?> authetication;
 
-	public static String getBase_url() {
-		return base_url;
+	public static String getBaseUrl() {
+		return baseUrl;
 	}
 
-	public static void setBase_url(String base_url) {
-		EnvObject.base_url = base_url;
+	public static void setBaseUrl(String base_url) {
+		EnvObject.baseUrl = base_url;
 	}
 
-	public static LinkedHashMap<String, String> getPath_url() {
-		return path_urls;
+	public static LinkedHashMap<String, String> getPathUrls() {
+		return pathUrls;
 	}
 
-	public static void setPath_urls(LinkedHashMap<String, String> path_urls) {
-		EnvObject.path_urls = path_urls;
+	public static void setPathUrls(LinkedHashMap<String, String> pathUrls) {
+		EnvObject.pathUrls = pathUrls;
 	}
 
-	public static String getContent_type() {
+	public static String getContentType() {
 		return content_type;
 	}
 
-	public static void setContent_type(String content_type) {
+	public static void setContentType(String content_type) {
 		EnvObject.content_type = content_type;
 	}
 

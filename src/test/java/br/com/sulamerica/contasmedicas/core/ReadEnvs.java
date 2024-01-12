@@ -12,8 +12,9 @@ public class ReadEnvs {
 	}
 
 	public static LinkedHashMap<?, ?> getEnv() throws Exception {
-		String environment = System.getProperty("ENV") != null ? System.getProperty("ENV") : "homolog";
+		String environment = System.getProperty("ENV") != null ? System.getProperty("ENV") : "develop";
 		return LinkedHashMap.class.cast(LinkedHashMap.class.cast(YamlManager.readYamlFromResources("env.yaml").get(0))
 				.get(environment));
 	}
 }
+

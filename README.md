@@ -36,3 +36,10 @@ https://cucumber.io/docs/cucumber/api/?lang=java
 https://ms-arquivos-integracao-tiss-develop.services.sulamerica.com.br/swagger-ui/index.html?configUrl=/aps-api/v3/api-docs/swagger-config#/Guias
 
 
+## CICD
+
+opção 1: repositório único
+opção 2: repositório para cada serviço
+
+Trigger 1: pull-request da desenv para develop: rodar em desenv
+Trigger 2: pull-request da develop para prod: rodar homolog

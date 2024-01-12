@@ -1,6 +1,8 @@
 package br.com.sulamerica.contasmedicas.model;
 import io.restassured.response.Response;
+import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class ResponseAPI {
 	private static Response response;
 	private static Integer statuscode;

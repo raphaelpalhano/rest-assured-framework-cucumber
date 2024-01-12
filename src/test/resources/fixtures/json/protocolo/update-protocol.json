@@ -1934,6 +1934,11 @@
     "codigoStatusAns": "EM_ANALISE",
     "versaoTISS": "3.05.00",
     "valorApresentado": 195.0,
+     "prestador": {
+       "codigo": "100000017475",
+       "modeloRemuneracao": "FFS",
+       "nome": "DIAGNOSTICOS DA AMERICA SA CERPE"
+     },
     "errosInternos": [
       {
         "mensagem": "Erro de integração na regra do nivel lote [DadoRecebimentoPrestador][178] com a mensagem [Erro ao buscar o dado de recebimento CRONOGRAMA do prestador.] ",

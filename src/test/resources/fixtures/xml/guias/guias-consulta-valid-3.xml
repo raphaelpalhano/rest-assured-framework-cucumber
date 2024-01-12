@@ -1,0 +1,63 @@
+<ans:mensagemTISS xmlns:ans="http://www.ans.gov.br/padroes/tiss/schemas" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ans.gov.br/padroes/tiss/schemas http://www.ans.gov.br/padroes/tiss/schemas/tissV3_05_00.xsd">
+  <ans:cabecalho>
+    <ans:identificacaoTransacao>
+      <ans:tipoTransacao>ENVIO_LOTE_GUIAS</ans:tipoTransacao>
+      <ans:sequencialTransacao>72977</ans:sequencialTransacao>
+      <ans:dataRegistroTransacao>2023-11-10</ans:dataRegistroTransacao>
+      <ans:horaRegistroTransacao>15:28:08</ans:horaRegistroTransacao>
+    </ans:identificacaoTransacao>
+    <ans:origem>
+      <ans:identificacaoPrestador>
+        <ans:codigoPrestadorNaOperadora>100000010577</ans:codigoPrestadorNaOperadora>
+      </ans:identificacaoPrestador>
+    </ans:origem>
+    <ans:destino>
+      <ans:registroANS>006246</ans:registroANS>
+    </ans:destino>
+    <ans:Padrao>3.05.00</ans:Padrao>
+  </ans:cabecalho>
+  <ans:prestadorParaOperadora>
+    <ans:loteGuias>
+      <ans:numeroLote>738870267</ans:numeroLote>
+      <ans:guiasTISS>
+        <ans:guiaConsulta>
+          <ans:cabecalhoConsulta>
+            <ans:registroANS>006246</ans:registroANS>
+            <ans:numeroGuiaPrestador>3273599163</ans:numeroGuiaPrestador>
+          </ans:cabecalhoConsulta>
+          <ans:numeroGuiaOperadora>000874258426</ans:numeroGuiaOperadora>
+          <ans:dadosBeneficiario>
+            <ans:numeroCarteira>09018100032330013</ans:numeroCarteira>
+            <ans:atendimentoRN>N</ans:atendimentoRN>
+            <ans:nomeBeneficiario>DARIO GASPERINI FILHO</ans:nomeBeneficiario>
+          </ans:dadosBeneficiario>
+          <ans:contratadoExecutante>
+            <ans:codigoPrestadorNaOperadora>100000010577</ans:codigoPrestadorNaOperadora>
+            <ans:nomeContratado>REDE DOR SAO LUIZ S.A. - CENTRO MEDICO VIVALLE</ans:nomeContratado>
+            <ans:CNES>7034938</ans:CNES>
+          </ans:contratadoExecutante>
+          <ans:profissionalExecutante>
+            <ans:nomeProfissional>Mariana de Almeida Richa</ans:nomeProfissional>
+            <ans:conselhoProfissional>06</ans:conselhoProfissional>
+            <ans:numeroConselhoProfissional>166535</ans:numeroConselhoProfissional>
+            <ans:UF>35</ans:UF>
+            <ans:CBOS>225135</ans:CBOS>
+          </ans:profissionalExecutante>
+          <ans:indicacaoAcidente>9</ans:indicacaoAcidente>
+          <ans:dadosAtendimento>
+            <ans:dataAtendimento>2023-10-04</ans:dataAtendimento>
+            <ans:tipoConsulta>1</ans:tipoConsulta>
+            <ans:procedimento>
+              <ans:codigoTabela>22</ans:codigoTabela>
+              <ans:codigoProcedimento>10101012</ans:codigoProcedimento>
+              <ans:valorProcedimento>81.01</ans:valorProcedimento>
+            </ans:procedimento>
+          </ans:dadosAtendimento>
+        </ans:guiaConsulta>
+      </ans:guiasTISS>
+    </ans:loteGuias>
+  </ans:prestadorParaOperadora>
+  <ans:epilogo>
+    <ans:hash>9f65758410fee4ead073c6aec64b7411</ans:hash>
+  </ans:epilogo>
+</ans:mensagemTISS>

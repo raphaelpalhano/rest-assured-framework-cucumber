@@ -1,0 +1,8 @@
+{
+  "valido": {
+    "codigo-prestador": "100000010577"
+  },
+  "invalido": {
+    "codigo-prestador": "100000010575"
+  }
+}

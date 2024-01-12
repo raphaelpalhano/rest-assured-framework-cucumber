@@ -3,6 +3,7 @@ package br.com.sulamerica.contasmedicas.steps;
 import br.com.sulamerica.contasmedicas.model.ResponseAPI;
 import br.com.sulamerica.contasmedicas.util.FileManager;
 import br.com.sulamerica.contasmedicas.util.JsonSchemaGenerator;
+import br.com.sulamerica.contasmedicas.util.SchemaGenerator;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Entao;
 import io.restassured.module.jsv.JsonSchemaValidator;
@@ -26,7 +27,8 @@ public class AssertionsGlobal {
 	public void validaSchema(String nomeSchema) throws Exception {
 		if(!nomeSchema.isEmpty()) {
 			String[] fileAndFolder = nomeSchema.split(",");
-			JsonSchemaGenerator.generateSchema(fileAndFolder[0], fileAndFolder[1], ResponseAPI.getResponse().getBody().asString());
+			JsonSchemaGenerator.outputAsFile("title", "description", ResponseAPI.getResponse().getBody().asString(), fileAndFolder[1]);
+			//SchemaGenerator.generateSchema(fileAndFolder[0], fileAndFolder[1], ResponseAPI.getResponse().getBody().asString());
 			File schema = FileManager.getRecursiveFiles(SCHEMA_PATH, fileAndFolder[1]);
 			ResponseAPI.getResponse().then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(schema));
 
